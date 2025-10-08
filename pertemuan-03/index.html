@@ -27,16 +27,28 @@
 
         <section id="about">
             <h2>Tentang Saya </h2>
-            <p><strong>NIM:</strong>    2511500002</p>
-            <p><strong>Nama Lengkap:</strong>   Fajar Agus Setiawan &#128526;</p>
-            <p><strong>Hobi:</strong>   Bermain Game &#128527;</p>
-            <p><strong>Pasangan:</strong>   HTS (Hubungan Tahap Serius) &hearts; &#128523;</p>
-            <p><strong>Pekerjaan:</strong>  Mahasiswa di ISB Atma Luhur &copy; 2025</p>
+            <p><strong>NIM:</strong> 2511500002</p>
+            <p><strong>Nama Lengkap:</strong> Fajar Agus Setiawan &#128526;</p>
+            <p><strong>Hobi:</strong> Bermain Game &#128527;</p>
+            <p><strong>Pasangan:</strong> HTS (Hubungan Tahap Serius) &hearts; &#128523;</p>
+            <p><strong>Pekerjaan:</strong> Mahasiswa di ISB Atma Luhur &copy; 2025</p>
         </section>
 
         <section id="contact">
             <h2>Kontak Kami</h2>
-            <p>contoh form</p>
+            <form action="" method="get">
+                <label for="txtNama">Nama:</label>
+                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+
+                <label for="txtEmail">Email:</label>
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+
+                <label for="txtPesan">Pesan:</label>
+                <textarea name="txtPesan" id="txtPesan" rows="4" placeholder="Tulis pesan anda...." required></textarea>
+
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </form>
         </section>
     </main>
 
