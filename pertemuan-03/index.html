@@ -41,12 +41,24 @@
 
         <section id="contact">
             <h2>Kontak Kami</h2>
-            <p>contoh form</p>
+            <form action="" method="get">
+                <label for="txtNama">Nama:</label>
+                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+                
+                <label for="txtEmail">Email:</label>
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+                
+                <label for="txtPesan">Pesan:</label>
+                <textarea name="txtPesan" id="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+                
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&#128526; 2025 FAJAR AGUS SETIAWAN (2511500002)</p>
+        <p>&#9786; &copy; 2025 FAJAR AGUS SETIAWAN (2511500002)</p>
     </footer>
 </body>
 
