@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman</title>
     <style>
+        /* editan about */
         #about {
             background-color: #ffffff;
             border-radius: 10px;
@@ -32,7 +33,7 @@
             border-bottom: 1px solid #e6e6e6;
         }
 
-        #about strong{
+        #about strong {
             min-width: 180px;
             color: #003366;
             font-weight: 600;
@@ -53,6 +54,82 @@
                 margin-bottom: 2px;
             }
         }
+
+        /* editan about end */
+
+        /* editan #contact */
+        #contact {
+            width: 400px;
+            max-width: 600px;
+            height: 500px;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 30px;
+            background-color: darkgray;
+            box-shadow: 10px 10px 10px rgb(72, 69, 69);
+        }
+
+        #contact form {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+        }
+
+        #contact h2 {
+            text-align: center;
+            border-bottom: 3px solid whitesmoke;
+            color: whitesmoke;
+            font-style: oblique;
+        }
+
+        #contact input {
+            border-radius: 20px;
+            border: 1px solid whitesmoke;
+            padding: 10px 5px;
+            margin: 10px 0;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        #contact label {
+            margin-right: auto;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        #contact textarea {
+            border: 1px solid whitesmoke;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            min-width: 100%;
+            max-width: 100%;
+            margin: 10px 10px;
+            padding: 10px;
+        }
+
+        #contact button {
+            color: white;
+            font-weight: bold;
+            align-self: normal;
+            padding: 15px 0;
+            margin: 10px 0;
+            border: 1px solid blue;
+            border-radius: 15px;
+            background-color: blue;
+            transition: all;
+            transition-delay: 0.3s;
+        }
+
+        @media (max-width: 500px) {
+            #contact {
+                min-width: fit-content;
+                max-width: fit-content;
+                min-height: auto;
+            }
+        }
+        /* editan #contact end */
     </style>
 </head>
 
