@@ -10,6 +10,17 @@ body {
     line-height: 1.5;
 }
 
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
 /* editan about */
  #about {
      background-color: #ffffff;
