@@ -21,4 +21,5 @@ Hari ini, Rabu 08 Oktober 2025, saya belajar:
     <li>membuat styling untuk selector id #contact button</li>
     <li>membuat styling untuk selector id #contact warna button</li>
     <li>membuat styling untuk selector id #contact efek button</li>
+    <li>membuat styling untuk selector id #contact mode responsif (mobile)</li>
 </ol>
