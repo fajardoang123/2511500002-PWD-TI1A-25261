@@ -151,3 +151,10 @@ header li a {
         width: 100%;
     }
 }
+
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+}
