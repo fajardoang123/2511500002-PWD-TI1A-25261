@@ -1,1 +1,9 @@
 # pertemuan-06
+
+Nim : 2511500002 <br>
+Nama : Fajar Agus Setiawan <br> <br>
+
+Hari ini, Rabu 29 Oktober 2025, saya mempelajari:
+<ol>
+    <li>hello.php</li>
+</ol>
