@@ -44,90 +44,157 @@
             ?>
             <h2>Tentang Saya </h2>
             <p>
-                <strong>Nama:</strong>
+                <strong>Nama :</strong>
                 <?php 
                     echo "$nama";
                 ?> 
             </p>
 
             <p>
-                <strong>NIM:</strong>
+                <strong>NIM :</strong>
                 <?php
                     echo "$nim";
                 ?>
             </p>
 
             <p>
-                <strong>Tempat Lahir:</strong>
+                <strong>Tempat Lahir :</strong>
                 <?php
                     echo "$tempat_lahir";
                 ?>
             </p>
 
             <p>
-                <strong>Tanggal Lahir:</strong>
+                <strong>Tanggal Lahir :</strong>
                 <?php
                     echo "$tanggal_lahir";
                 ?>
             </p>
 
             <p>
-                <strong>Hobi:</strong>
+                <strong>Hobi :</strong>
                 <?php
                     echo "$hobi";
                 ?>
             </p>
 
             <p>
-                <strong>Pasangan:</strong>
+                <strong>Pasangan :</strong>
                 <?php
                     echo "$pasangan";
                 ?>
             </p>
 
             <p>
-                <strong>Pekerjaan:</strong> 
+                <strong>Pekerjaan :</strong> 
                 <?php
                     echo "$pekerjaan";
                 ?>
             </p>
 
             <p>
-                <strong>Nama Orang Tua:</strong>
+                <strong>Nama Orang Tua :</strong>
                 <?php
                     echo "$orang_tua";
                 ?>
             </p>
 
             <p>
-                <strong>Nama Kakak:</strong>
+                <strong>Nama Kakak :</strong>
                 <?php
                     echo "$kakak";
                 ?>
             </p>
 
             <p>
-                <strong>Name Adik:</strong>
+                <strong>Name Adik :</strong>
                 <?php
                     echo "$adik";
                 ?>
             </p>
         </section>
 
+        <section id="ipk">
+            <h2>Nilai saya</h2>
+            <p><strong>Nama Matakuliah ke-1 :</strong></p>
+            <p><strong>SKS :</strong></p>
+            <p><strong>Kehadiran :</strong></p>
+            <p><strong>Tugas :</strong></p>
+            <p><strong>UTS :</strong></p>
+            <p><strong>UAS :</strong></p>
+            <p><strong>Nilai Akhir :</strong></p>
+            <p><strong>Grade :</strong></p>
+            <p><strong>Angka Mutu :</strong></p>
+            <p><strong>Bobot :</strong></p>
+            <p><strong>Status :</strong></p>
+            <hr>
+            <p><strong>Nama Matakuliah ke-2 :</strong></p>
+            <p><strong>SKS :</strong></p>
+            <p><strong>Kehadiran :</strong></p>
+            <p><strong>Tugas :</strong></p>
+            <p><strong>UTS :</strong></p>
+            <p><strong>UAS :</strong></p>
+            <p><strong>Nilai Akhir :</strong></p>
+            <p><strong>Grade :</strong></p>
+            <p><strong>Angka Mutu :</strong></p>
+            <p><strong>Bobot :</strong></p>
+            <p><strong>Status :</strong></p>
+            <hr>
+            <p><strong>Nama Matakuliah ke-3 :</strong></p>
+            <p><strong>SKS :</strong></p>
+            <p><strong>Kehadiran :</strong></p>
+            <p><strong>Tugas :</strong></p>
+            <p><strong>UTS :</strong></p>
+            <p><strong>UAS :</strong></p>
+            <p><strong>Nilai Akhir :</strong></p>
+            <p><strong>Grade :</strong></p>
+            <p><strong>Angka Mutu :</strong></p>
+            <p><strong>Bobot :</strong></p>
+            <p><strong>Status :</strong></p>
+            <hr>
+            <p><strong>Nama Matakuliah ke-4 :</strong></p>
+            <p><strong>SKS :</strong></p>
+            <p><strong>Kehadiran :</strong></p>
+            <p><strong>Tugas :</strong></p>
+            <p><strong>UTS :</strong></p>
+            <p><strong>UAS :</strong></p>
+            <p><strong>Nilai Akhir :</strong></p>
+            <p><strong>Grade :</strong></p>
+            <p><strong>Angka Mutu :</strong></p>
+            <p><strong>Bobot :</strong></p>
+            <p><strong>Status :</strong></p>
+            <hr>
+            <p><strong>Nama Matakuliah ke-5 :</strong></p>
+            <p><strong>SKS :</strong></p>
+            <p><strong>Kehadiran :</strong></p>
+            <p><strong>Tugas :</strong></p>
+            <p><strong>UTS :</strong></p>
+            <p><strong>UAS :</strong></p>
+            <p><strong>Nilai Akhir :</strong></p>
+            <p><strong>Grade :</strong></p>
+            <p><strong>Angka Mutu :</strong></p>
+            <p><strong>Bobot :</strong></p>
+            <p><strong>Status :</strong></p>
+            <hr>
+            <p><strong>Total Bobot :</strong></p>
+            <p><strong>Total SKS :</strong></p>
+            <p><strong>IPK :</strong></p>
+        </section>
+
         <section id="contact">
             <h2>Kontak Kami</h2>
             <form action="" method="get">
-                <label for="txtNama"><span>Nama:</span>
+                <label for="txtNama"><span>Nama :</span>
                     <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
                         autocomplete="name">
                 </label>
 
-                <label for="txtEmail"><span>Email:</span>
+                <label for="txtEmail"><span>Email :</span>
                     <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required
                         autocomplete="email">
                 </label>
 
-                <label for="txtPesan"><span>Pesan:</span>
+                <label for="txtPesan"><span>Pesan :</span>
                     <textarea name="txtPesan" id="txtPesan" rows="4" placeholder="Tulis pesan anda..."
                         required></textarea>
                     <small id="charCount">0/200 karakter</small>
