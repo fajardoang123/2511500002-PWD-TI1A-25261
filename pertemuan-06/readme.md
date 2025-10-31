@@ -8,5 +8,6 @@ Hari ini, Rabu 29 Oktober 2025, saya mempelajari:
     <li>hello.php</li>
     <li>index.php</li>
     <li>membuat variabel PHP untuk nilai nama sampai adik</li>
+    <li>memasukkan variabel PHP sebagai nilai untuk nama sampai adik</li>
     <li>membuat section#ipk</li>
 </ol>
