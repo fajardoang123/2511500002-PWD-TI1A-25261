@@ -30,17 +30,88 @@
         </section>
 
         <section id="about">
+            <?php
+                $nama = "Fajar Agus Setiawan &#128526";
+                $nim = "2511500002";
+                $tempat_lahir = "Sungailiat";
+                $tanggal_lahir = "14 Agustus 2007";
+                $hobi = "Bermain Game";
+                $pasangan = "HTS (Hubungan Tahap Serius) &hearts;";
+                $pekerjaan = "Mahasiswa di ISB Atma Luhur &copy; 2025";
+                $orang_tua = "Bapak Abdurrahman dan Ibu Yasimah";
+                $kakak = "-";
+                $adik = "Mauralia Nurhasanah";
+            ?>
             <h2>Tentang Saya </h2>
-            <p><strong>Nama:</strong>Fajar Agus Setiawan &#128526;</p>
-            <p><strong>NIM:</strong>2511500002</p>
-            <p><strong>Tempat Lahir:</strong>Sungailiat</p>
-            <p><strong>Tanggal Lahir:</strong>14 Agustus 2007</p>
-            <p><strong>Hobi:</strong>Bermain Game</p>
-            <p><strong>Pasangan:</strong>HTS (Hubungan Tahap Serius) &hearts;</p>
-            <p><strong>Pekerjaan:</strong>Mahasiswa di ISB Atma Luhur &copy; 2025</p>
-            <p><strong>Nama Orang Tua:</strong>Bapak Abdurrahman dan Ibu Yasimah</p>
-            <p><strong>Nama Kakak:</strong>Tidak ada</p>
-            <p><strong>Name Adik:</strong>Mauralia Nurhasanah</p>
+            <p>
+                <strong>Nama:</strong>
+                <?php 
+                    echo "$nama";
+                ?> 
+            </p>
+
+            <p>
+                <strong>NIM:</strong>
+                <?php
+                    echo "$nim";
+                ?>
+            </p>
+
+            <p>
+                <strong>Tempat Lahir:</strong>
+                <?php
+                    echo "$tempat_lahir";
+                ?>
+            </p>
+
+            <p>
+                <strong>Tanggal Lahir:</strong>
+                <?php
+                    echo "$tanggal_lahir";
+                ?>
+            </p>
+
+            <p>
+                <strong>Hobi:</strong>
+                <?php
+                    echo "$hobi";
+                ?>
+            </p>
+
+            <p>
+                <strong>Pasangan:</strong>
+                <?php
+                    echo "$pasangan";
+                ?>
+            </p>
+
+            <p>
+                <strong>Pekerjaan:</strong> 
+                <?php
+                    echo "$pekerjaan";
+                ?>
+            </p>
+
+            <p>
+                <strong>Nama Orang Tua:</strong>
+                <?php
+                    echo "$orang_tua";
+                ?>
+            </p>
+
+            <p>
+                <strong>Nama Kakak:</strong>
+                <?php
+                    echo "$kakak";
+                ?>
+            </p>
+
+            <p>
+                <strong>Name Adik:</strong>
+                <?php
+                    echo "$adik";
+                ?>
+            </p>
         </section>
 
         <section id="contact">
