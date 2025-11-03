@@ -128,7 +128,7 @@
             <p>
                 <strong>SKS :</strong>
                 <?php
-                $sksMatkul1 = "4";
+                $sksMatkul1 = "8";
                 echo $sksMatkul1;
                 ?>
             </p>
@@ -136,7 +136,7 @@
             <p>
                 <strong>Kehadiran :</strong>
                 <?php
-                $nilaiHadir1 = "70";
+                $nilaiHadir1 = "100";
                 echo $nilaiHadir1;
                 ?>
             </p>
@@ -144,7 +144,7 @@
             <p>
                 <strong>Tugas :</strong>
                 <?php
-                $nilaiTugas1 = "40";
+                $nilaiTugas1 = "100";
                 echo $nilaiTugas1;
                 ?>
             </p>
@@ -152,7 +152,7 @@
             <p>
                 <strong>UTS :</strong>
                 <?php
-                $nilaiUTS1 = "40";
+                $nilaiUTS1 = "100";
                 echo $nilaiUTS1;
                 ?>
             </p>
@@ -160,7 +160,7 @@
             <p>
                 <strong>UAS :</strong>
                 <?php
-                $nilaiUAS1 = "40";
+                $nilaiUAS1 = "100";
                 echo $nilaiUAS1;
                 ?>
             </p>
@@ -209,7 +209,7 @@
                 if ($nilaiHadir1 < 70) {
                     $mutu1 = "0.00";
                 } elseif ($nilaiAkhir1 >= 91) {
-                    $mutu1 = "4,00";
+                    $mutu1 = "4.00";
                 } elseif ($nilaiAkhir1 >= 81) {
                     $mutu1 = "3.70";
                 } elseif ($nilaiAkhir1 >= 76) {
@@ -280,7 +280,7 @@
             <p>
                 <strong>SKS :</strong>
                 <?php
-                $sksMatkul2 = "7";
+                $sksMatkul2 = "5";
                 echo $sksMatkul2;
                 ?>
             </p>
@@ -288,7 +288,7 @@
             <p>
                 <strong>Kehadiran :</strong>
                 <?php
-                $nilaiHadir2 = "80";
+                $nilaiHadir2 = "75";
                 echo $nilaiHadir2;
                 ?>
             </p>
@@ -296,7 +296,7 @@
             <p>
                 <strong>Tugas :</strong>
                 <?php
-                $nilaiTugas2 = "75";
+                $nilaiTugas2 = "65";
                 echo $nilaiTugas2;
                 ?>
             </p>
@@ -361,7 +361,7 @@
                 if ($nilaiHadir2 < 70) {
                     $mutu2 = "0.00";
                 } elseif ($nilaiAkhir2 >= 91) {
-                    $mutu2 = "4,00";
+                    $mutu2 = "4.00";
                 } elseif ($nilaiAkhir2 >= 81) {
                     $mutu2 = "3.70";
                 } elseif ($nilaiAkhir2 >= 76) {
@@ -389,7 +389,7 @@
                 <strong>Bobot :</strong>
                 <?php
                 $bobot2 = $mutu2 * $sksMatkul2;
-                echo $bobot1;
+                echo $bobot2;
                 ?>
             </p>
 
@@ -432,7 +432,7 @@
             <p>
                 <strong>SKS :</strong>
                 <?php
-                $sksMatkul3 = "3";
+                $sksMatkul3 = "4";
                 echo $sksMatkul3;
                 ?>
             </p>
@@ -440,7 +440,7 @@
             <p>
                 <strong>Kehadiran :</strong>
                 <?php
-                $nilaiHadir3 = "75";
+                $nilaiHadir3 = "60";
                 echo $nilaiHadir3;
                 ?>
             </p>
@@ -448,7 +448,7 @@
             <p>
                 <strong>Tugas :</strong>
                 <?php
-                $nilaiTugas3 = "60";
+                $nilaiTugas3 = "90";
                 echo $nilaiTugas3;
                 ?>
             </p>
@@ -456,7 +456,7 @@
             <p>
                 <strong>UTS :</strong>
                 <?php
-                $nilaiUTS3 = "70";
+                $nilaiUTS3 = "80";
                 echo $nilaiUTS3;
                 ?>
             </p>
@@ -464,7 +464,7 @@
             <p>
                 <strong>UAS :</strong>
                 <?php
-                $nilaiUAS3 = "65";
+                $nilaiUAS3 = "85";
                 echo $nilaiUAS3;
                 ?>
             </p>
@@ -513,7 +513,7 @@
                 if ($nilaiHadir3 < 70) {
                     $mutu3 = "0.00";
                 } elseif ($nilaiAkhir3 >= 91) {
-                    $mutu3 = "4,00";
+                    $mutu3 = "4.00";
                 } elseif ($nilaiAkhir3 >= 81) {
                     $mutu3 = "3.70";
                 } elseif ($nilaiAkhir3 >= 76) {
@@ -584,7 +584,7 @@
             <p>
                 <strong>SKS :</strong>
                 <?php
-                $sksMatkul4 = "7";
+                $sksMatkul4 = "6";
                 echo $sksMatkul4;
                 ?>
             </p>
@@ -600,7 +600,7 @@
             <p>
                 <strong>Tugas :</strong>
                 <?php
-                $nilaiTugas4 = "50";
+                $nilaiTugas4 = "55";
                 echo $nilaiTugas4;
                 ?>
             </p>
@@ -608,7 +608,7 @@
             <p>
                 <strong>UTS :</strong>
                 <?php
-                $nilaiUTS4 = "60";
+                $nilaiUTS4 = "40";
                 echo $nilaiUTS4;
                 ?>
             </p>
@@ -616,7 +616,7 @@
             <p>
                 <strong>UAS :</strong>
                 <?php
-                $nilaiUAS4 = "80";
+                $nilaiUAS4 = "50";
                 echo $nilaiUAS4;
                 ?>
             </p>
@@ -665,7 +665,7 @@
                 if ($nilaiHadir4 < 70) {
                     $mutu4 = "0.00";
                 } elseif ($nilaiAkhir4 >= 91) {
-                    $mutu4 = "4,00";
+                    $mutu4 = "4.00";
                 } elseif ($nilaiAkhir4 >= 81) {
                     $mutu4 = "3.70";
                 } elseif ($nilaiAkhir4 >= 76) {
@@ -744,7 +744,7 @@
             <p>
                 <strong>Kehadiran :</strong>
                 <?php
-                $nilaiHadir5 = "70";
+                $nilaiHadir5 = "90";
                 echo $nilaiHadir5;
                 ?>
             </p>
@@ -752,7 +752,7 @@
             <p>
                 <strong>Tugas :</strong>
                 <?php
-                $nilaiTugas5 = "75";
+                $nilaiTugas5 = "95";
                 echo $nilaiTugas5;
                 ?>
             </p>
@@ -760,7 +760,7 @@
             <p>
                 <strong>UTS :</strong>
                 <?php
-                $nilaiUTS5 = "70";
+                $nilaiUTS5 = "90";
                 echo $nilaiUTS5;
                 ?>
             </p>
@@ -768,7 +768,7 @@
             <p>
                 <strong>UAS :</strong>
                 <?php
-                $nilaiUAS5 = "60";
+                $nilaiUAS5 = "85";
                 echo $nilaiUAS5;
                 ?>
             </p>
@@ -817,7 +817,7 @@
                 if ($nilaiHadir5 < 70) {
                     $mutu5 = "0.00";
                 } elseif ($nilaiAkhir5 >= 91) {
-                    $mutu5 = "4,00";
+                    $mutu5 = "4.00";
                 } elseif ($nilaiAkhir5 >= 81) {
                     $mutu5 = "3.70";
                 } elseif ($nilaiAkhir5 >= 76) {
@@ -876,7 +876,14 @@
             </p>
             <!-- MATKUL 5 END -->
             <hr>
-            <p><strong>Total Bobot :</strong></p>
+            <p>
+                <strong>Total Bobot :</strong>
+                <?php
+                    $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
+                    echo $totalBobot;
+                ?>
+            </p>
+
             <p><strong>Total SKS :</strong></p>
             <p><strong>IPK :</strong></p>
         </section>
