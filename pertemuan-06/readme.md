@@ -12,4 +12,5 @@ Hari ini, Rabu 29 Oktober 2025, saya mempelajari:
     <li>membuat section#ipk</li>
     <li>styling section#ipk</li>
     <li>membuat variabel dan melakukan perhitungan untuk matkul 1</li>
+    <li>membuat variabel dan melakukan perhitungan untuk matkul 2</li>
 </ol>
