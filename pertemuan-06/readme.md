@@ -15,4 +15,5 @@ Hari ini, Rabu 29 Oktober 2025, saya mempelajari:
     <li>membuat variabel dan melakukan perhitungan untuk matkul 2</li>
     <li>membuat variabel dan melakukan perhitungan untuk matkul 3</li>
     <li>membuat variabel dan melakukan perhitungan untuk matkul 4</li>
+    <li>membuat variabel dan melakukan perhitungan untuk matkul 5</li>
 </ol>
