@@ -11,5 +11,5 @@ Hari ini, Rabu 29 Oktober 2025, saya mempelajari:
     <li>memasukkan variabel PHP sebagai nilai untuk nama sampai adik</li>
     <li>membuat section#ipk</li>
     <li>styling section#ipk</li>
-    <li>membuat variabel untuk setiap matkul</li>
+    <li>membuat variabel dan melakukan perhitungan untuk matkul 1</li>
 </ol>
