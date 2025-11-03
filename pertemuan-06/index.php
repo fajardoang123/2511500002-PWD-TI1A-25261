@@ -115,8 +115,75 @@
         </section>
 
         <section id="ipk">
+            <?php 
+                // variabel matkul 1
+                $namaMatkul1 = "Pemrograman Web Dasar";
+                $sksMatkul1 = "4";
+                $nilaiHadir1 = "90";
+                $nilaiTugas1 = "60";
+                $nilaiUTS1 = "80";
+                $nilaiUAS1 = "70";
+                $nilaiAkhir1 = "";
+                $grade1 = "";
+                $mutu1 = "";
+                $bobot1 = "";
+                $status = "";
+
+                // varibel matkul2
+                $namaMatkul2 = "Logika Informatika";
+                $sksMatkul2 = "3";
+                $nilaiHadir2 = "80";
+                $nilaiTugas2 = "75";
+                $nilaiUTS2 = "90";
+                $nilaiUAS2 = "85";
+                $nilaiAkhir2 = "";
+                $grade2 = "";
+                $mutu2 = "";
+                $bobot2 = "";
+                $status2 = ""; 
+
+                // variabel matkul 3
+                $namaMatkul3 = "Konsep Basis Data";
+                $sksMatkul3 = "3";
+                $nilaiHadir3 = "75";
+                $nilaiTugas3 = "60";
+                $nilaiUTS3 = "70";
+                $nilaiUAS3 = "65"; 
+                $nilaiAkhir3 = "";
+                $grade3 = "";
+                $mutu3 = "";
+                $bobot3 = "";
+                $status3 = "";
+                
+                // variabel matkul 4
+                $namaMatkul4 = "Aplikasi Perkantoran";
+                $sksMatkul4 = "7";
+                $nilaiHadir4 = "70";
+                $nilaiTugas4 = "50";
+                $nilaiUTS4 = "60";
+                $nilaiUAS4 = "80";
+                $nilaiAkhir4 = "";
+                $grade4 = "";
+                $mutu4 = "";
+                $bobot4 = "";
+                $status4 = "";
+                
+                // variabel matkul 5
+                $namaMatkul5 = "Kalkulus";
+                $sksMatkul5 = "6";
+                $nilaiHadir5 = "70";
+                $nilaiTugas5 = "75";
+                $nilaiUTS5 = "40";
+                $nilaiUAS5 = "60";
+                $nilaiAkhir5 = "";
+                $grade5 = "";
+                $mutu5 = "";
+                $bobot5 = "";
+                $status5 = "";
+                
+            ?>
             <h2>Nilai saya</h2>
-            <p><strong>Nama Matakuliah ke-1 :</strong></p>
+            <p><strong>Nama Matakuliah 1 :</strong></p>
             <p><strong>SKS :</strong></p>
             <p><strong>Kehadiran :</strong></p>
             <p><strong>Tugas :</strong></p>
@@ -128,7 +195,7 @@
             <p><strong>Bobot :</strong></p>
             <p><strong>Status :</strong></p>
             <hr>
-            <p><strong>Nama Matakuliah ke-2 :</strong></p>
+            <p><strong>Nama Matakuliah 2 :</strong></p>
             <p><strong>SKS :</strong></p>
             <p><strong>Kehadiran :</strong></p>
             <p><strong>Tugas :</strong></p>
@@ -140,7 +207,7 @@
             <p><strong>Bobot :</strong></p>
             <p><strong>Status :</strong></p>
             <hr>
-            <p><strong>Nama Matakuliah ke-3 :</strong></p>
+            <p><strong>Nama Matakuliah 3 :</strong></p>
             <p><strong>SKS :</strong></p>
             <p><strong>Kehadiran :</strong></p>
             <p><strong>Tugas :</strong></p>
@@ -152,7 +219,7 @@
             <p><strong>Bobot :</strong></p>
             <p><strong>Status :</strong></p>
             <hr>
-            <p><strong>Nama Matakuliah ke-4 :</strong></p>
+            <p><strong>Nama Matakuliah 4 :</strong></p>
             <p><strong>SKS :</strong></p>
             <p><strong>Kehadiran :</strong></p>
             <p><strong>Tugas :</strong></p>
@@ -164,7 +231,7 @@
             <p><strong>Bobot :</strong></p>
             <p><strong>Status :</strong></p>
             <hr>
-            <p><strong>Nama Matakuliah ke-5 :</strong></p>
+            <p><strong>Nama Matakuliah 5 :</strong></p>
             <p><strong>SKS :</strong></p>
             <p><strong>Kehadiran :</strong></p>
             <p><strong>Tugas :</strong></p>
