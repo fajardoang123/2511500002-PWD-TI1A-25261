@@ -736,7 +736,7 @@
             <p>
                 <strong>SKS :</strong>
                 <?php
-                $sksMatkul5 = "6";
+                $sksMatkul5 = "5";
                 echo $sksMatkul5;
                 ?>
             </p>
@@ -884,8 +884,21 @@
                 ?>
             </p>
 
-            <p><strong>Total SKS :</strong></p>
-            <p><strong>IPK :</strong></p>
+            <p>
+                <strong>Total SKS :</strong>
+                <?php
+                    $totalSKS = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
+                    echo $totalSKS;
+                ?>
+            </p>
+
+            <p>
+                <strong>IPK :</strong>
+                <?php
+                    $IPK = $totalBobot / $totalSKS;
+                    echo $IPK;
+                ?>
+            </p>
         </section>
 
         <section id="contact">

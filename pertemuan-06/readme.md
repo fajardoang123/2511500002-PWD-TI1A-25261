@@ -17,4 +17,5 @@ Hari ini, Rabu 29 Oktober 2025, saya mempelajari:
     <li>membuat variabel dan melakukan perhitungan untuk matkul 4</li>
     <li>membuat variabel dan melakukan perhitungan untuk matkul 5</li>
     <li>membuat variabel dan melakukan perhitungan untuk $totalBobot</li>
+    <li>membuat variabel dan melakukan perhitungan untuk $totalSKS</li>
 </ol>
