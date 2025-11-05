@@ -9,4 +9,5 @@ Hari ini, Rabu 05 Oktober 2025, saya mempelajari:
     <li>membuat salinan index.php dan direname jadi get.php, lalu membuat file get_proses.php untuk action</li>
     <li>membuat isi untuk get_proses.php</li>
     <li>membuat session di get_proses.php</li>
+    <li>memunuculkan session dari get_proses.php ke get.php</li>
 </ol>
