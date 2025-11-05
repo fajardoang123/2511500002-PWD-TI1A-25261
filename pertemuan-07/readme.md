@@ -10,4 +10,6 @@ Hari ini, Rabu 05 Oktober 2025, saya mempelajari:
     <li>membuat isi untuk get_proses.php</li>
     <li>membuat session di get_proses.php</li>
     <li>memunuculkan session dari get_proses.php ke get.php</li>
+    <li>redirect dari get_proses.php ke get.php</li>
+    <li>copast get.php dan get_proses.php dan di rename jadi post.php dan post_proses.php</li>
 </ol>
