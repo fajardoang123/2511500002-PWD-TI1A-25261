@@ -48,6 +48,8 @@
                 <?php
                 echo "$nama";
                 ?>
+
+                
             </p>
 
             <p>
@@ -736,7 +738,7 @@
             <p>
                 <strong>SKS :</strong>
                 <?php
-                $sksMatkul5 = "5";
+                $sksMatkul5 = "3";
                 echo $sksMatkul5;
                 ?>
             </p>
@@ -744,7 +746,7 @@
             <p>
                 <strong>Kehadiran :</strong>
                 <?php
-                $nilaiHadir5 = "90";
+                $nilaiHadir5 = "70";
                 echo $nilaiHadir5;
                 ?>
             </p>
