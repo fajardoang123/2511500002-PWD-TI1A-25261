@@ -3,6 +3,5 @@ session_start();
 $_SESSION["nama"] = $_POST["txtNama"];
 $_SESSION["email"] = $_POST["txtEmail"];
 $_SESSION["pesan"] = $_POST["txtPesan"];
-echo $_SESSION["nama"]." ".$_SESSION["email"]." ".$_SESSION["pesan"];
-// header("Location: POST.php");
+header("Location: post.php");
 ?>
