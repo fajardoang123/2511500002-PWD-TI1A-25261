@@ -1,8 +1,13 @@
 <?php
 session_start();
-$sesnama = $_SESSION["nama"];
-$sesemail = $_SESSION["email"];
-$sespesan = $_SESSION["pesan"];
+$sesname = "";
+if (isset($_SESSION["nama"])):
+  $sesname = $_SESSION["nama"];
+  endif;
+
+  if (isset($_SESSION["email"])):
+    $sesemail = $_SESSION["email"];
+    endif;
 ?>
 
 <!DOCTYPE html>

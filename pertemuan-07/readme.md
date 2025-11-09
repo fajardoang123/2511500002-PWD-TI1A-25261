@@ -14,4 +14,5 @@ Hari ini, Rabu 05 Oktober 2025, saya mempelajari:
     <li>copast get.php dan get_proses.php dan di rename jadi post.php dan post_proses.php</li>
     <li>sesuaikan get ke post</li>
     <li>session destroy</li>
+    <li>isset</li>
 </ol>
