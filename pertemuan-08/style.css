@@ -88,6 +88,7 @@ header li a:active {
 }
 
 #about p,
+#contact p,
 #form_profil label,
 #contact label {
   display: flex;
@@ -99,6 +100,7 @@ header li a:active {
 }
 
 #about strong,
+#contact strong,
 #form_profil label>span,
 #contact label>span {
   min-width: 180px;
