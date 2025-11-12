@@ -10,4 +10,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat section baru untuk form pendaftaran profil pengunjung</li>
   <li>membuat styling untuk section#form_profil</li>
   <li>membuat struktur form untuk form pendaftaran profil</li>
+  <li>membuat styling untuk label dan input form pendaftaran profil pengunjung</li>
 </ol>

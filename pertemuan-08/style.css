@@ -50,6 +50,7 @@ header li a:active {
 }
 
 #home:target~header nav a[href="#home"],
+#form_profil:target~header nav a[href="#form_profil"],
 #about:target~header nav a[href="#about"],
 #contact:target~header nav a[href="#contact"] {
   background: #fff;
@@ -87,6 +88,7 @@ header li a:active {
 }
 
 #about p,
+#form_profil label,
 #contact label {
   display: flex;
   justify-content: flex-start;
@@ -97,6 +99,7 @@ header li a:active {
 }
 
 #about strong,
+#form_profil label>span,
 #contact label>span {
   min-width: 180px;
   color: #003366;
@@ -107,6 +110,7 @@ header li a:active {
 }
 
 #contact input,
+#form_profil input,
 #contact textarea {
   flex: 1;
   border: 1px solid #ccc;
@@ -118,7 +122,8 @@ header li a:active {
   box-sizing: border-box;
 }
 
-#contact button {
+#contact button,
+#form_profil button {
   margin-top: 10px;
   display: inline-block;
   padding: 10px 24px;
@@ -130,25 +135,29 @@ header li a:active {
   margin-right: 8px;
 }
 
-#contact button[type="submit"] {
+#contact button[type="submit"],
+#form_profil button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
-#contact button[type="reset"] {
+#contact button[type="reset"],
+#form_profil button[type="reset"] {
   background-color: #b4b4b4;
   color: #272727;
   font-weight: 500;
 }
 
-#contact button[type="submit"]:hover {
+#contact button[type="submit"]:hover,
+#form_profil button[type="submit"]:hover {
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-#contact button[type="reset"]:hover {
+#contact button[type="reset"]:hover,
+#form_profil button[type="reset"]:hover {
   background-color: #cccccc;
   transform: translateY(-1px);
 }
@@ -218,12 +227,14 @@ footer {
   }
 
   #about p,
+  #form_profil label,
   #contact label {
     flex-direction: column;
     align-items: flex-start;
   }
 
   #about strong,
+  #form_profil label>span,
   #contact label>span {
     text-align: left;
     padding-right: 0;
@@ -231,8 +242,10 @@ footer {
   }
 
   #contact input,
+  #form_profil input,
   #contact textarea,
-  #contact button {
+  #contact button,
+  #form_profil button {
     width: 100%;
   }
 }
