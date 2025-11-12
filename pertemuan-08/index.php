@@ -54,7 +54,60 @@ endif;
 
     <section id="form_profil">
       <h2>Pendaftaran Profil Pengunjung</h2>
-      
+      <form action="form_profil_proses.php" method="POST">
+        <label for="nim">
+          <span>NIM :</span>
+          <input type="text" id="nim" name="nim" placeholder="Tulis NIM anda" required>
+        </label>
+
+        <label for="nama_lengkap">
+          <span>Nama Lengkap :</span>
+          <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Tulis nama lengkap anda" required>
+        </label>
+
+        <label for="tempat_lahir">
+          <span>Tempat Lahir :</span>
+          <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tulis tempat lahir anda" required>
+        </label>
+
+        <label for="tanggal_lahir">
+          <span>Tanggal Lahir :</span>
+          <input type="text" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tulis tanggal lahir anda" required>
+        </label>
+
+        <label for="hobi">
+          <span>Hobi :</span>
+          <input type="text" id="hobi" name="hobi" placeholder="Tulis hobi anda" required>
+        </label>
+
+        <label for="pasangan">
+          <span>Pasangan :</span>
+          <input type="text" id="pasangan" name="pasangan" placeholder="Tulis pasangan anda" required>
+        </label>
+
+        <label for="pekerjaan">
+          <span>Pekerjaan :</span>
+          <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Tulis pekerjaan anda" required>
+        </label>
+
+        <label for="orang_tua">
+          <span>Nama Orang Tua :</span>
+          <input type="text" id="orang_tua" name="orang_tua" placeholder="Tulis orang tua anda" required>
+        </label>
+
+        <label for="kakak">
+          <span>Nama Kakak :</span>
+          <input type="text" id="kakak" name="kakak" placeholder="Tulis nama kakak anda" required>
+        </label>
+
+        <label for="adik">
+          <span>Nama Adik :</span>
+          <input type="text" id="adik" name="adik" placeholder="Tulis nama adik anda" required>
+        </label>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
     </section>
 
     <section id="about">
