@@ -11,5 +11,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat styling untuk section#form_profil</li>
   <li>membuat struktur form untuk form pendaftaran profil</li>
   <li>membuat styling untuk label dan input form pendaftaran profil pengunjung</li>
-  <li>membuat file form_profil_proses.php untuk file action form pendaftaran profil</li>
+  <li>membuat file form_profil_proses.php untuk file action form pendaftaran profil pengunjung</li>
+  <li>membuat skrip untuk file form_profil_proses.php untuk memproses menggunakan session</li>
 </ol>
