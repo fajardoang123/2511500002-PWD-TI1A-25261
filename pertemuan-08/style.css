@@ -60,6 +60,7 @@ header li a:active {
 }
 
 #home,
+#form_profil,
 #about,
 #contact {
   background-color: #ffffff;
@@ -71,6 +72,7 @@ header li a:active {
 }
 
 #home h2,
+#form_profil h2,
 #about h2,
 #contact h2 {
   color: #003366;

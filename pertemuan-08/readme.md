@@ -8,4 +8,5 @@ Kelompok: TI1A<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>membuat section baru untuk form pendaftaran profil pengunjung</li>
+  <li>membuat styling untuk section#form_profil</li>
 </ol>
