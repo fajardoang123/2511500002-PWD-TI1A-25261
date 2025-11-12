@@ -3,6 +3,16 @@ session_start();
 $sesnama = $_SESSION["nama"];
 $sesemail = $_SESSION["email"];
 $sespesan = $_SESSION["pesan"];
+$sesNIM = $_SESSION["NIM"];
+$sesNamaLengkap = $_SESSION["NamaLengkap"];
+$sesTempatLahir = $_SESSION["TempatLahir"];
+$sesTanggalLahir = $_SESSION["TanggalLahir"];
+$sesHobi = $_SESSION["Hobi"];
+$sesPasangan = $_SESSION["Pasangan"];
+$sesPekerjaan = $_SESSION["Pekerjaan"];
+$sesOrangTua = $_SESSION["NamaOrangTua"];
+$sesKakak = $_SESSION["Kakak"];
+$sesAdik = $_SESSION["Adik"];
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +45,7 @@ $sespesan = $_SESSION["pesan"];
       <h2>Selamat Datang</h2>
       <?php
       echo "halo dunia!<br>";
-      echo "nama saya hadi";
+      echo "nama saya fajar";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
@@ -99,24 +109,9 @@ $sespesan = $_SESSION["pesan"];
     </section>
 
     <section id="about">
-      <?php
-      $nim = 2511500010;
-      $NIM = '0344300002';
-      $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
-      $tempat = "Jebus";
-      ?>
       <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong>
-        <?php
-        echo $NIM;
-        ?>
-      </p>
-      <p><strong>Nama Lengkap:</strong>
-        <?php
-        echo $Nama;
-        ?> &#128526;
-      </p>
+      <p><strong>NIM:</strong><?php echo $NIM; ?></p>
+      <p><strong>Nama Lengkap:</strong><?php echo $Nama; ?> &#128526;</p>
       <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
       <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
       <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
