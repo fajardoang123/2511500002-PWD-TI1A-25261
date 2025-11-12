@@ -52,52 +52,54 @@ $sesAdik = $_SESSION["Adik"];
 
     <section id="form_profil">
       <h2>Pendaftaran Profil Pengunjung</h2>
+      <!-- form untuk pendaftaran profil pengunjung -->
       <form action="form_profil_proses.php" method="POST">
+        <!-- input untuk nim -->
         <label for="nim">
           <span>NIM :</span>
           <input type="text" id="nim" name="nim" placeholder="Tulis NIM anda" required>
         </label>
-
+        <!-- input untuk nama lengkap -->
         <label for="nama_lengkap">
           <span>Nama Lengkap :</span>
           <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Tulis nama lengkap anda" required>
         </label>
-
+        <!-- input untuk tempat lahir -->
         <label for="tempat_lahir">
           <span>Tempat Lahir :</span>
           <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tulis tempat lahir anda" required>
         </label>
-
+        <!-- input untuk tanggal lahir -->
         <label for="tanggal_lahir">
           <span>Tanggal Lahir :</span>
           <input type="text" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tulis tanggal lahir anda" required>
         </label>
-
+        <!-- input untuk hobi -->
         <label for="hobi">
           <span>Hobi :</span>
           <input type="text" id="hobi" name="hobi" placeholder="Tulis hobi anda" required>
         </label>
-
+        <!-- input untuk pasangan -->
         <label for="pasangan">
           <span>Pasangan :</span>
           <input type="text" id="pasangan" name="pasangan" placeholder="Tulis pasangan anda" required>
         </label>
-
+        <!-- input untuk pekerjaan -->
         <label for="pekerjaan">
           <span>Pekerjaan :</span>
           <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Tulis pekerjaan anda" required>
         </label>
-
+        <!-- input untuk nama orang tua -->
         <label for="orang_tua">
           <span>Nama Orang Tua :</span>
           <input type="text" id="orang_tua" name="orang_tua" placeholder="Tulis orang tua anda" required>
         </label>
-
+        <!-- input untuk nama kakak -->
         <label for="kakak">
           <span>Nama Kakak :</span>
           <input type="text" id="kakak" name="kakak" placeholder="Tulis nama kakak anda" required>
         </label>
-
+        <!-- input untuk nama adik -->
         <label for="adik">
           <span>Nama Adik :</span>
           <input type="text" id="adik" name="adik" placeholder="Tulis nama adik anda" required>
@@ -110,16 +112,16 @@ $sesAdik = $_SESSION["Adik"];
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong><?php echo $NIM; ?></p>
-      <p><strong>Nama Lengkap:</strong><?php echo $Nama; ?> &#128526;</p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+      <p><strong>NIM:</strong><?php echo $sesNIM; ?></p>
+      <p><strong>Nama Lengkap:</strong><?php echo $sesNamaLengkap; ?></p>
+      <p><strong>Tempat Lahir:</strong> <?php echo $sesTempatLahir; ?></p>
+      <p><strong>Tanggal Lahir:</strong><?php echo $sesTanggalLahir; ?></p>
+      <p><strong>Hobi:</strong><?php echo $sesHobi; ?></p>
+      <p><strong>Pasangan:</strong><?php echo $sesPasangan; ?></p>
+      <p><strong>Pekerjaan:</strong><?php echo $sesPekerjaan; ?></p>
+      <p><strong>Nama Orang Tua:</strong><?php echo $sesOrangTua; ?></p>
+      <p><strong>Nama Kakak:</strong><?php echo $sesKakak; ?></p>
+      <p><strong>Nama Adik:</strong> <?php echo $sesAdik; ?></p>
     </section>
 
     <section id="contact">
@@ -144,19 +146,17 @@ $sesAdik = $_SESSION["Adik"];
         <button type="reset">Batal</button>
       </form>
 
-        <br><hr>
-        <h2>Yang menghubungi kami</h2>
-        <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
-        <p><strong>Email :</strong> <?php echo $sesemail ?></p>
-        <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
-
-
-
+      <br>
+      <hr>
+      <h2>Yang menghubungi kami</h2>
+      <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
+      <p><strong>Email :</strong> <?php echo $sesemail ?></p>
+      <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p>&copy; 2025 Fajar Agus Setiawan 2511500002</p>
   </footer>
 
   <script src="script.js"></script>

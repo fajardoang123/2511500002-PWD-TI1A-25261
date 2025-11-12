@@ -14,4 +14,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat file form_profil_proses.php untuk file action form pendaftaran profil pengunjung</li>
   <li>membuat skrip untuk file form_profil_proses.php untuk memproses menggunakan session</li>
   <li>membuat skrip di index.php untuk memasukkan session yang ada di form_profil_proses.php ke dalam variabel</li>
+  <li>menulis variabel yang berisi variabel session ke dalam section#about</li>
 </ol>
