@@ -22,4 +22,6 @@ Kelompok: TI1A<br>
   <li>membuat skrip untuk menampilkan array menggunakan looping foreach</li>
   <li>menghapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array
 associative $fieldConfig</li>
+<li>membuat file fungsi.php</li>
+<li>membuat skrip fungsi</li>
 </ol>
