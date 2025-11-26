@@ -25,4 +25,5 @@ associative $fieldConfig</li>
 <li>membuat file fungsi.php</li>
 <li>membuat skrip fungsi</li>
 <li>membuat skrip fungsi untuk format tanggal</li>
+<li>membuat skrip fungsi untuk merender hasil output biodata</li>
 </ol>
