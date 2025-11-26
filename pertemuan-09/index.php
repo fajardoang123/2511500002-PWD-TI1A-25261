@@ -154,9 +154,11 @@ endif;
         <p><strong>Email :</strong> <?php echo $sesemail ?></p>
         <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
       <?php endif; ?>
+    </section>
 
-
-
+    <section id="kontak">
+      <h2>Yang Menghubungi Kami</h2>
+      
     </section>
   </main>
 
