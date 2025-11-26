@@ -1,8 +1,19 @@
 <?php
 session_start();
-$sesname = $_SESSION["nama"];
-$sesemail = $_SESSION["email"];
-$sespesan = $_SESSION["pesan"];
+$sesname = "";
+if (isset($_SESSION["nama"])):
+  $sesname = $_SESSION["nama"];
+endif;
+
+$sesemail = "";
+if (isset($_SESSION["email"])):
+  $sesemail = $_SESSION["email"];
+endif;
+
+$sespesan = "";
+if (isset($_SESSION["pesan"])):
+  $sespesan = $_SESSION["pesan"];
+endif;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +80,7 @@ $sespesan = $_SESSION["pesan"];
 
     <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="get_proses.php" method="GET">
+      <form action="post_proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
