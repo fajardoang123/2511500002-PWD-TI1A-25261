@@ -17,4 +17,5 @@ Kelompok: TI1A<br>
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>mengubah variabel data post menjadi array associative</li>
+  <li>mengubah session menjadi session biodata yang menggunakan array</li>
 </ol>
