@@ -29,4 +29,5 @@ associative $fieldConfig</li>
 <li>mengganti perulangan looping foreach menjadi lebih ringkas</li>
 <li>memanggil file fungsi.php menggunakan require</li>
 <li>membuat array untuk form section#contact</li>
+<li>membuat session["pengguna"] yang berisi variabel yang mengandung array</li>
 </ol>
