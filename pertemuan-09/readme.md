@@ -19,4 +19,5 @@ Kelompok: TI1A<br>
   <li>mengubah variabel data post menjadi array associative</li>
   <li>mengubah session menjadi session biodata yang menggunakan array</li>
   <li>membuat skrip untuk array sebelum section#about</li>
+  <li>membuat skrip untuk menampilkan array menggunakan looping foreach</li>
 </ol>
