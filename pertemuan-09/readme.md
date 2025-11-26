@@ -20,4 +20,6 @@ Kelompok: TI1A<br>
   <li>mengubah session menjadi session biodata yang menggunakan array</li>
   <li>membuat skrip untuk array sebelum section#about</li>
   <li>membuat skrip untuk menampilkan array menggunakan looping foreach</li>
+  <li>menghapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array
+associative $fieldConfig</li>
 </ol>
