@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once __DIR__ .'/fungsi.php';
+require_once __DIR__ . '/fungsi.php';
 ?>
 
 <!DOCTYPE html>
@@ -107,7 +107,7 @@ require_once __DIR__ .'/fungsi.php';
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <?= tampilkanBiodata($fieldConfig,$biodata) ?>
+      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
     </section>
 
     <section id="contact">
@@ -145,15 +145,21 @@ require_once __DIR__ .'/fungsi.php';
     $pengguna = $_SESSION["pengguna"] ?? [];
 
     $userConfig = [
-      "name"=> ["label" => "Nama:","suffix"=> ""],
-      "email"=> ["label"=> "Email:","suffix"=> ""],
-      "pesan"=> ["label"=> "Pesan:","suffix"=> ""],
+      "name" => ["label" => "Nama:", "suffix" => ""],
+      "email" => ["label" => "Email:", "suffix" => ""],
+      "pesan" => ["label" => "Pesan:", "suffix" => ""],
     ];
     ?>
 
     <section id="kontak">
       <h2>Yang Menghubungi Kami</h2>
-
+      <?php foreach ($userConfig as $kunci => $metadata): ?>
+        <p>
+          <strong><?= $metadata["label"] ?></strong>
+          <?= htmlspecialchars($pengguna[$kunci] ?? "") ?>
+          <?= $metadata["suffix"] ?>
+        </p>
+      <?php endforeach; ?>
     </section>
   </main>
 
