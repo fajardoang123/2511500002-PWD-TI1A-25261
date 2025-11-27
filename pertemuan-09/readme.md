@@ -30,4 +30,5 @@ associative $fieldConfig</li>
 <li>memanggil file fungsi.php menggunakan require</li>
 <li>membuat array untuk form section#contact</li>
 <li>membuat session["pengguna"] yang berisi variabel yang mengandung array</li>
+<li>membuat skrip untuk array sebelum section#kontak</li>
 </ol>

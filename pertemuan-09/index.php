@@ -2,21 +2,6 @@
 session_start();
 
 require_once __DIR__ .'/fungsi.php';
-
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
-
-$sesemail = "";
-if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
-endif;
-
-$sespesan = "";
-if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
-endif;
 ?>
 
 <!DOCTYPE html>
@@ -156,9 +141,19 @@ endif;
       <?php endif; ?>
     </section>
 
+    <?php
+    $pengguna = $_SESSION["pengguna"] ?? [];
+
+    $userConfig = [
+      "name"=> ["label" => "Nama:","suffix"=> ""],
+      "email"=> ["label"=> "Email:","suffix"=> ""],
+      "pesan"=> ["label"=> "Pesan:","suffix"=> ""],
+    ];
+    ?>
+
     <section id="kontak">
       <h2>Yang Menghubungi Kami</h2>
-      
+
     </section>
   </main>
 
