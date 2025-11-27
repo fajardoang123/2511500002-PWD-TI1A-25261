@@ -32,4 +32,5 @@ associative $fieldConfig</li>
 <li>membuat session["pengguna"] yang berisi variabel yang mengandung array</li>
 <li>membuat skrip untuk array sebelum section#kontak</li>
 <li>menampilkan array form section#contact menggunakan looping foreach</li>
+<li>membuat skrip fungsi untuk merender output pengguna</li>
 </ol>
