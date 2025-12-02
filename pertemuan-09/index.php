@@ -153,13 +153,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="kontak">
       <h2>Yang Menghubungi Kami</h2>
-      <?php foreach ($userConfig as $kunci => $metadata): ?>
-        <p>
-          <strong><?= $metadata["label"] ?></strong>
-          <?= htmlspecialchars($pengguna[$kunci] ?? "") ?>
-          <?= $metadata["suffix"] ?>
-        </p>
-      <?php endforeach; ?>
+      <?=  tampilkanUser($userConfig, $pengguna) ?>
     </section>
   </main>
 
