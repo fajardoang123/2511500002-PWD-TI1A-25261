@@ -9,4 +9,5 @@ Kelompok: TI1A<br>
     <li>membuat file koneksi.php</li>
     <li>membuat skrip untuk koneksi.php</li>
     <li>membuat database di phpMyAdmin</li>
+    <li>membuat query di phpMyAdmin</li>
 </ol>
