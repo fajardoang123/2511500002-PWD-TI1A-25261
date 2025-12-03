@@ -11,4 +11,5 @@ Kelompok: TI1A<br>
     <li>membuat database di phpMyAdmin</li>
     <li>membuat query di phpMyAdmin</li>
     <li>membuat file read.php serta skripnya</li>
+    <li>membuat record di database</li>
 </ol>
