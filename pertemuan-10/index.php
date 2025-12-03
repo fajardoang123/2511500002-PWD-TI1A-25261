@@ -125,7 +125,7 @@ require_once __DIR__ . '/fungsi.php';
           <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
           <small id="charCount">0/200 karakter</small>
         </label>
-        
+
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
@@ -143,7 +143,7 @@ require_once __DIR__ . '/fungsi.php';
       <br>
       <hr>
       <h2>Yang menghubungi kami</h2>
-      <?= tampilkanBiodata($fieldContact, $contact) ?>
+      <?php include 'read_inc.php'; ?>
     </section>
   </main>
 
