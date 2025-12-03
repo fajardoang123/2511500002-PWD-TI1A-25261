@@ -15,4 +15,5 @@ Kelompok: TI1A<br>
     <li>mengcopy file read.php dan merename jadi read_inc.php sekaligus merubah skripnya</li>
     <li>merubah skrip untuk menampilkan data dari read_inc.php</li>
     <li>menghapus skrip array contact yang lama</li>
+    <li>ekspor database dari db_pwd2025</li>
 </ol>
