@@ -12,4 +12,5 @@ Kelompok: TI1A<br>
     <li>membuat query di phpMyAdmin</li>
     <li>membuat file read.php serta skripnya</li>
     <li>membuat record di database</li>
+    <li>mengcopy file read.php dan merename jadi read_inc.php sekaligus merubah skripnya</li>
 </ol>
