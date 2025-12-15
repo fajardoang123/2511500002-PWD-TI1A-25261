@@ -23,4 +23,5 @@ Kelompok: TI1A<br>
     <li>mengecek request method menggunakan post atau tidak</li>
     <li>mengambil data post, trim dan htmlspesialchars</ll>
     <li>membuat validasi tidak kosong</li>
+    <li>membuat query insert dengan prepared statement</li>
 </ol>

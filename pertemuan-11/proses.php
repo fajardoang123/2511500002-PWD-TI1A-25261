@@ -38,6 +38,31 @@ if (!empty($errors)) {
   $_SESSION['flash_error'] = implode('<br>', $errors);
   redirect_ke('index.php');
 }
+
+$sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
+$stmt = mysqli_prepare($conn, $sql);
+
+if (!$stmt) {
+  $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
+  redirect_ke('index.php');
+}
+mysqli_stmt_bind_param($stmt,'sss', $nama, $email, $pesan);
+
+if (mysqli_stmt_execute($stmt)) {
+  unset($_SESSION['old']);
+  $_SESSION['flash_sukses'] = 'Terima kasih, data anda sudah tersimpan.';
+  redirect_ke('index.php');
+} else {
+  $_SESSION['old'] = [
+    'nama'=> $nama,
+    'email'=> $email,
+    'pesan'=> $pesan,
+  ];
+  $_SESSION['flash_error'] = 'Data gagal disimpan. Silahkan coba lagi.';
+  redirect_ke('index.php');
+}
+mysqli_stmt_close($stmt);
+
 $arrBiodata = [
   "nim" => $_POST["txtNim"] ?? "",
   "nama" => $_POST["txtNmLengkap"] ?? "",
