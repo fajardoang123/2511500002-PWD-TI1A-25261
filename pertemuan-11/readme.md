@@ -17,4 +17,5 @@ Kelompok: TI1A<br>
     <li>menghapus skrip array contact yang lama</li>
     <li>ekspor database dari db_pwd2025</li>
     <li>update fungsi.php</li>
+    <li>menambah penangkap pesan sukses/gagal</li>
 </ol>
