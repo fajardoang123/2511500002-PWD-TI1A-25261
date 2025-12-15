@@ -1,5 +1,5 @@
 # pertemuan-10
-Hari ini, Rabu 03.DESEMBER.2025, saya:<br>
+Hari ini, Rabu 10.DESEMBER.2025, saya:<br>
 NIM: 2511500002<br>
 Nama: Fajar Agus Setiawan<br>
 Kelompok: TI1A<br>
@@ -18,4 +18,5 @@ Kelompok: TI1A<br>
     <li>ekspor database dari db_pwd2025</li>
     <li>update fungsi.php</li>
     <li>menambah penangkap pesan sukses/gagal</li>
+    <li>menampilkan flash message</li>
 </ol>
