@@ -19,4 +19,5 @@ Kelompok: TI1A<br>
     <li>update fungsi.php</li>
     <li>menambah penangkap pesan sukses/gagal</li>
     <li>menampilkan flash message</li>
+    <li>menampilkan nilai lama dari form</li>
 </ol>
