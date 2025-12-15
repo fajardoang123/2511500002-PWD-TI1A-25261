@@ -1,13 +1,12 @@
 <?php
 session_start();
+require __DIR__ .'./koneksi.php';
+require_once __DIR__ .'./fungsi.php';
 
-$arrContact = [
-  "nama" => $_POST["txtNama"] ?? "",
-  "email" => $_POST["txtEmail"] ?? "",
-  "pesan" => $_POST["txtPesan"] ?? ""
-];
-$_SESSION["contact"] = $arrContact;
-
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  $_SESSION['flash_error'] = 'Akses tidak valid';
+  redirect_ke('index.php');
+}
 $arrBiodata = [
   "nim" => $_POST["txtNim"] ?? "",
   "nama" => $_POST["txtNmLengkap"] ?? "",

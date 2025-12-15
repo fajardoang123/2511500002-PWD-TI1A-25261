@@ -20,4 +20,5 @@ Kelompok: TI1A<br>
     <li>menambah penangkap pesan sukses/gagal</li>
     <li>menampilkan flash message</li>
     <li>menampilkan nilai lama dari form</li>
+    <li>mengecek request method menggunakan post atau tidak</li>
 </ol>
