@@ -21,4 +21,5 @@ Kelompok: TI1A<br>
     <li>menampilkan flash message</li>
     <li>menampilkan nilai lama dari form</li>
     <li>mengecek request method menggunakan post atau tidak</li>
+    <li>mengambil data post, trim dan htmlspesialchars</ll>
 </ol>
