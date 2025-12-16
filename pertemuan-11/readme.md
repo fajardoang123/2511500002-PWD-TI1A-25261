@@ -24,4 +24,5 @@ Kelompok: TI1A<br>
     <li>mengambil data post, trim dan htmlspesialchars</ll>
     <li>membuat validasi tidak kosong</li>
     <li>membuat query insert dengan prepared statement</li>
+    <li>membuat  captcha sederhana</li>
 </ol>
