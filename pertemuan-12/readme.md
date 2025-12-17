@@ -29,4 +29,5 @@ Kelompok: TI1A<br>
     <li>mengcopy folder pertemuan 11 ke pertemuan 12</li>
     <li>menambah kolom aksi</li>
     <li>membuat link edit yang aman</li>
+    <li>menambahkan penampil flash mesagge di read.php</li>
 </ol>
