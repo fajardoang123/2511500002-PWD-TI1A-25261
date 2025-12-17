@@ -1,5 +1,5 @@
 # pertemuan-10
-Hari ini, Rabu 10.DESEMBER.2025, saya:<br>
+Hari ini, Rabu 17.DESEMBER.2025, saya:<br>
 NIM: 2511500002<br>
 Nama: Fajar Agus Setiawan<br>
 Kelompok: TI1A<br>
@@ -33,4 +33,5 @@ Kelompok: TI1A<br>
     <li>membuat file edit.php</li>
     <li>membuat skrip untuk menampilkan form dengan data lama</li>
     <li>membuat file proses_update.php</li>
+    <li>membuat skrip untuk menyimpan query update</li>
 </ol>
