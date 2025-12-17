@@ -30,4 +30,5 @@ Kelompok: TI1A<br>
     <li>menambah kolom aksi</li>
     <li>membuat link edit yang aman</li>
     <li>menambahkan penampil flash mesagge di read.php</li>
+    <li>membuat file edit.php</li>
 </ol>
