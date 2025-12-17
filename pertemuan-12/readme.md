@@ -31,4 +31,5 @@ Kelompok: TI1A<br>
     <li>membuat link edit yang aman</li>
     <li>menambahkan penampil flash mesagge di read.php</li>
     <li>membuat file edit.php</li>
+    <li>membuat skrip untuk menampilkan form dengan data lama</li>
 </ol>
