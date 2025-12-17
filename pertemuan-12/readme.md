@@ -27,4 +27,5 @@ Kelompok: TI1A<br>
     <li>membuat  captcha sederhana</li>
     <li>membuat validasi untuk capctha</li>
     <li>mengcopy folder pertemuan 11 ke pertemuan 12</li>
+    <li>menambah kolom aksi</li>
 </ol>
