@@ -32,4 +32,5 @@ Kelompok: TI1A<br>
     <li>menambahkan penampil flash mesagge di read.php</li>
     <li>membuat file edit.php</li>
     <li>membuat skrip untuk menampilkan form dengan data lama</li>
+    <li>membuat file proses_update.php</li>
 </ol>
