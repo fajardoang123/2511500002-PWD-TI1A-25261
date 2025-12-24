@@ -13,4 +13,5 @@ Kelompok: TI1A<br>
     <li>menghapus dan mengubah isi dari proses delete untuk men delete</li>
     <li>menambah parameter cid untuk link delete di read.php</li>
     <il>memperbaiki proses delete agar menggunakan parameter cid</li>
+    <li>membuat  konfirmasi untuk menghapus data</li>
 </ol>
