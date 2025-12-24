@@ -10,4 +10,5 @@ Kelompok: TI1A<br>
     <li>mengimpor database sql</li>
     <li>menambah link delete untuk ke proses_delete.php</li>
     <li>mengopy semua isi dari proses_update ke proses delete</li>
+    <li>menghapus dan mengubah isi dari proses delete untuk men delete</li>
 </ol>
