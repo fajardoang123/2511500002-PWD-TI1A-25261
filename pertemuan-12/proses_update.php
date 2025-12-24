@@ -1,7 +1,7 @@
 <?php 
 session_start();
-require __DIR__ ."./koneksi.php";
-require_once __DIR__ ."./fungsi.php";
+require __DIR__ . '/koneksi.php';
+require_once __DIR__ .  "/fungsi.php";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
@@ -34,7 +34,7 @@ if ($pesan === '') {
     $errors[] = 'Pesan wajib diisi.';
 }
 if ($captcha === '') {
-    $errors[] = "Pertanyaan wajib diisi."
+    $errors[] = "Pertanyaan wajib diisi.";
 }
 if (mb_strlen($nama) < 3) {
     $errors[] = "Nama minimal 3 karakter.";
@@ -42,7 +42,7 @@ if (mb_strlen($nama) < 3) {
 if (mb_strlen($pesan) < 10) {
     $errors[] = "Pesan minimal 10 karakter";
 }
-if ($captcha!=="6") {
+if ($captcha!=="5") {
     $errors[] = 'Jawaban '. $captcha.' captcha salah';
 }
 
@@ -56,7 +56,7 @@ if (!empty($errors)) {
     redirect_ke('edit.php?cid='. (int)$cid);
 }
 
-$stmt = mysqli_prepare($conn,'UPDATE tbl_tamu SET cnama = ?, cpesan = ? WHERE cid = ?');
+$stmt = mysqli_prepare($conn,'UPDATE tbl_tamu SET cnama = ?, cemail = ?, cpesan = ? WHERE cid = ?');
 if (!$stmt) {
     $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
     redirect_ke('edit.php?cid='. (int)$cid);
@@ -67,7 +67,7 @@ mysqli_stmt_bind_param($stmt ,'sssi', $nama, $email, $pesan, $cid);
 if (mysqli_stmt_execute($stmt)) {
     unset($_SESSION['old']);
     $_SESSION['flash_sukses'] = 'Terima kasih, data anda sudah diperbarui.';
-    redirect_ke('read,php');
+    redirect_ke('read.php');
 } else {
     $_SESSION['old'] = [
         'nama' => $nama,

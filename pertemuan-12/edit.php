@@ -44,11 +44,6 @@ if (!empty($old)) {
 }
 ?>
 
-<?php
-session_start();
-require_once __DIR__ . '/fungsi.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
