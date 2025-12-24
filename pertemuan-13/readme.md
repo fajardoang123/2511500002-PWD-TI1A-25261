@@ -12,4 +12,5 @@ Kelompok: TI1A<br>
     <li>mengopy semua isi dari proses_update ke proses delete</li>
     <li>menghapus dan mengubah isi dari proses delete untuk men delete</li>
     <li>menambah parameter cid untuk link delete di read.php</li>
+    <il>memperbaiki proses delete agar menggunakan parameter cid</li>
 </ol>
