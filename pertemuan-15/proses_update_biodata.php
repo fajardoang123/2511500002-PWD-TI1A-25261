@@ -6,7 +6,17 @@ require_once __DIR__ . '/fungsi.php';
 #cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
-  redirect_ke('index.php#biodata');
+  redirect_ke('read_biodata.php');
+}
+
+#validasi nmr wajib angka dan > 0
+$nmr = filter_input(INPUT_POST, 'nmr', FILTER_VALIDATE_INT, [
+  'options' => ['min_range' => 1]
+]);
+
+if (!$nmr) {
+  $_SESSION['flash_error'] = 'nmr Tidak Valid.';
+  redirect_ke('update_biodata.php?nmr'.(int)$nmr);
 }
 
 #ambil dan bersihkan nilai dari form

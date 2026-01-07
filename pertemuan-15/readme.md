@@ -28,4 +28,5 @@ Kelompok: TI1A<br>
     <li>mmembuat form untuk update_biodata</li>
     <li>membuat file proses_update_biodata untuk memproses form edit</li>
     <li>memastikan request method adalah post</li>
+    <li>membuat validasi untuk nmr</li>
 </ol>
