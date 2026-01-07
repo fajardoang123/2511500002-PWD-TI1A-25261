@@ -10,5 +10,7 @@ Kelompok: TI1A<br>
     <li>membuat tabel untuk nampung record biodata</li>
     <li>membuat file baru bernama proses_biodata untuk memproses form</li>
     <li>menambah pesan sukses/gagal</li>
-    <li>menampilkan pesab sukses/gagal</li>
+    <li>menampilkan pesan sukses/gagal</li>
+    <li>mengecek request method menggunakan post atau tidak</li>
+    <li></li>
 </ol>
