@@ -19,17 +19,17 @@ if (!$nmr) {
   redirect_ke('update_biodata.php?nmr'.(int)$nmr);
 }
 
-#ambil dan bersihkan nilai dari form
-$nim = bersihkan($_POST['txtNim'] ?? '');
-$nama_lengkap = bersihkan($_POST['txtNmLengkap'] ?? '');
-$tempat  = bersihkan($_POST['txtT4Lhr']  ?? '');
-$tanggal = bersihkan($_POST['txtTglLhr'] ?? '');
-$hobi = bersihkan($_POST['txtHobi'] ?? '');
-$pasangan = bersihkan($_POST['txtPasangan'] ?? '');
-$pekerjaan = bersihkan($_POST['txtKerja'] ?? '');
-$ortu = bersihkan($_POST['txtNmOrtu'] ?? '');
-$kakak = bersihkan($_POST['txtNmKakak'] ?? '');
-$adik = bersihkan($_POST['txtNmAdik'] ?? '');
+#ambil dan bersihkan nilai dari form (sanitasi)
+$nim = bersihkan($_POST['txtNimEd'] ?? '');
+$nama_lengkap = bersihkan($_POST['txtNmLengkapEd'] ?? '');
+$tempat  = bersihkan($_POST['txtT4LhrEd']  ?? '');
+$tanggal = bersihkan($_POST['txtTglLhrEd'] ?? '');
+$hobi = bersihkan($_POST['txtHobiEd'] ?? '');
+$pasangan = bersihkan($_POST['txtPasanganEd'] ?? '');
+$pekerjaan = bersihkan($_POST['txtKerjaEd'] ?? '');
+$ortu = bersihkan($_POST['txtNmOrtuEd'] ?? '');
+$kakak = bersihkan($_POST['txtNmKakakEd'] ?? '');
+$adik = bersihkan($_POST['txtNmAdikEd'] ?? '');
 $captcha = bersihkan($_POST['txtCaptcha'] ?? '');
 
 #Validasi sederhana
