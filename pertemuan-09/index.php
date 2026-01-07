@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 require_once __DIR__ . '/fungsi.php';
 ?>
 
@@ -86,6 +85,7 @@ require_once __DIR__ . '/fungsi.php';
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
+
     </section>
 
     <?php
@@ -95,7 +95,7 @@ require_once __DIR__ . '/fungsi.php';
       "nim" => ["label" => "NIM:", "suffix" => ""],
       "nama" => ["label" => "Nama Lengkap:", "suffix" => "&#128526;"],
       "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
-      "tanggal" => ["label" => "Tanggal Lahir", "suffix" => ""],
+      "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
       "hobi" => ["label" => "Hobi:", "suffix" => "&#127926;"],
       "pasangan" => ["label" => "Pasangan:", "suffix" => "&hearts;"],
       "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => "&copy; 2025"],
@@ -109,6 +109,16 @@ require_once __DIR__ . '/fungsi.php';
       <h2>Tentang Saya</h2>
       <?= tampilkanBiodata($fieldConfig, $biodata) ?>
     </section>
+
+    <?php
+    $contact = $_SESSION["contact"] ?? [];
+
+    $fieldContact = [
+      "nama" => ["label" => "Nama:", "suffix" => ""],
+      "email" => ["label" => "Email:", "suffix" => ""],
+      "pesan" => ["label" => "Pesan:", "suffix" => ""],
+    ];
+    ?>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
@@ -130,30 +140,10 @@ require_once __DIR__ . '/fungsi.php';
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
-
-      <?php if (!empty($sesnama)): ?>
-        <br>
-        <hr>
-        <h2>Yang menghubungi kami</h2>
-        <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
-        <p><strong>Email :</strong> <?php echo $sesemail ?></p>
-        <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
-      <?php endif; ?>
-    </section>
-
-    <?php
-    $pengguna = $_SESSION["pengguna"] ?? [];
-
-    $userConfig = [
-      "name" => ["label" => "Nama:", "suffix" => ""],
-      "email" => ["label" => "Email:", "suffix" => ""],
-      "pesan" => ["label" => "Pesan:", "suffix" => ""],
-    ];
-    ?>
-
-    <section id="kontak">
-      <h2>Yang Menghubungi Kami</h2>
-      <?=  tampilkanUser($userConfig, $pengguna) ?>
+      <br>
+      <hr>
+      <h2>Yang menghubungi kami</h2>
+      <?= tampilkanBiodata($fieldContact, $contact) ?>
     </section>
   </main>
 

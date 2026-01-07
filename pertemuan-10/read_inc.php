@@ -9,9 +9,10 @@ $fieldContact = [
 
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
 $q = mysqli_query($conn, $sql);
+
 if (!$q) {
     echo "<p>Gagal membaca data tamu: " . htmlspecialchars(mysqli_error($conn)) . "</p>";
-} else if (mysqli_num_rows($q) === 0) {
+} elseif (mysqli_num_rows($q) === 0) {
     echo "<p>Belum ada data tamu yang tersimpan.</p>";
 } else {
     while ($row = mysqli_fetch_assoc($q)) {
@@ -20,7 +21,7 @@ if (!$q) {
             "email" => $row["cemail"] ?? "",
             "pesan" => $row["cpesan"] ?? "",
         ];
-        echo tampilkanBiodata($fieldContact, $arrContact);
     }
+    echo tampilkanBiodata($fieldContact, $arrContact);
 }
 ?>
