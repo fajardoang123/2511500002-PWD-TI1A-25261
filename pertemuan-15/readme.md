@@ -7,4 +7,5 @@ Kelompok: TI1A<br>
 <ol>
     <li>download bahan tryout uas</li>
     <li>ekstrak bahan tryout uas ke folder pertemuan-15</li>
+    <li>membuat tabel untuk nampung record biodata</li>
 </ol>
