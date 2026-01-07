@@ -17,4 +17,5 @@ Kelompok: TI1A<br>
     <li>membuat konsep prg</li>
     <li>menyiapkan query insert ke tabel menggunakan prepared statement</li>
     <li>membuat file read_biodata untuk membaca record</li>
+    <li>membuat skrip untuk memanggil data dari database</li>
 </ol>
