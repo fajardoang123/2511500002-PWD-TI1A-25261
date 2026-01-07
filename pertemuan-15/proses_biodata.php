@@ -6,7 +6,7 @@ require_once __DIR__ . '/fungsi.php';
 #cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
-  redirect_ke('index.php#');
+  redirect_ke('index.php');
 }
 
 #ambil dan bersihkan nilai dari form
@@ -65,14 +65,21 @@ simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
   $_SESSION['old'] = [
-    'nama'  => $nama,
-    'email' => $email,
-    'pesan' => $pesan,
+    'nim'  => $nim,
+    'nama' => $nama_lengkap,
+    'tempat' => $tempat,
+    'tanggal' => $tanggal,
+    'hobi' => $hobi,
+    'pasangan' => $pasangan,
+    'pekerjaan' => $pekerjaan,
+    'ortu' => $ortu,
+    'kakak' => $kakak,
+    'adik' => $adik,
     'captcha' => $captcha,
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
-  redirect_ke('index.php#contact');
+  redirect_ke('index.php');
 }
 
 #menyiapkan query INSERT dengan prepared statement

@@ -14,4 +14,5 @@ Kelompok: TI1A<br>
     <li>mengecek request method menggunakan post atau tidak</li>
     <li>membuat validasi untuk form biodata</li>
     <li>membuat sanitasi untuk form biodata</li>
+    <li>membuat konsep prg</li>
 </ol>
