@@ -9,4 +9,5 @@ Kelompok: TI1A<br>
     <li>ekstrak bahan tryout uas ke folder pertemuan-15</li>
     <li>membuat tabel untuk nampung record biodata</li>
     <li>membuat file baru bernama proses_biodata untuk memproses form</li>
+    <li>menambah pesan sukses/gagal</li>
 </ol>
