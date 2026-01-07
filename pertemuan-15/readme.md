@@ -1,1 +1,9 @@
 # pertemuan-15
+Hari ini, Rabu 07.JANUARI.2026, saya:<br>
+NIM: 2511500002<br>
+Nama: Fajar Agus Setiawan<br>
+Kelompok: TI1A<br>
+<br>
+<ol>
+    <li>download bahan tryout uas</li>
+</ol>
