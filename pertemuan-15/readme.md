@@ -16,4 +16,5 @@ Kelompok: TI1A<br>
     <li>membuat sanitasi untuk form biodata</li>
     <li>membuat konsep prg</li>
     <li>menyiapkan query insert ke tabel menggunakan prepared statement</li>
+    <li>membuat file read_biodata untuk membaca record</li>
 </ol>
