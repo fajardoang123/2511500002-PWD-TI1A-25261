@@ -85,7 +85,6 @@ if (!empty($errors)) {
     'ortu' => $ortu,
     'kakak' => $kakak,
     'adik' => $adik,
-    'captcha' => $captcha,
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -94,7 +93,7 @@ if (!empty($errors)) {
 
 #menyiapkan query update dengan prepared statement
 $stmt = mysqli_prepare($conn, "UPDATE tbl_about
-                                SET nim = ?, SET nama = ?, SET tempat_lahir = ?, SET tanggal_lahir = ?, SET hobi = ?, SET pasangan = ?, SET pekerjaan = ?, SET nama_ortu = ?, SET kakak = ?, SET adik = ?
+                                SET  nim = ?, nama = ?, tempat_lahir = ?, tanggal_lahir = ?, hobi = ?, pasangan = ?, pekerjaan = ?, nama_ortu = ?, kakak = ?, adik = ?
                                 WHERE nmr = ?");
 
 if (!$stmt) {
@@ -103,12 +102,12 @@ if (!$stmt) {
   redirect_ke('update_biodata.php?nmr'.(int)$nmr);
 }
 
-mysqli_stmt_bind_param($stmt, "ssssssssss", $nim, $nama_lengkap, $tempat, $tanggal, $hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik);
+mysqli_stmt_bind_param($stmt, "ssssssssssi", $nim, $nama_lengkap, $tempat, $tanggal, $hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik, $nmr);
 
 if (mysqli_stmt_execute($stmt)) { 
   unset($_SESSION['old']);
-  $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
-  redirect_ke('read_biodata'); 
+  $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah terupdate.';
+  redirect_ke('read_biodata.php'); 
 } else { 
   $_SESSION['old'] = [
     'nim'  => $nim,
@@ -121,7 +120,6 @@ if (mysqli_stmt_execute($stmt)) {
     'ortu' => $ortu,
     'kakak' => $kakak,
     'adik' => $adik,
-    'captcha' => $captcha,
   ];
   $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
   redirect_ke('update_biodata.php?nmr'.(int)$nmr);
