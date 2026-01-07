@@ -12,5 +12,5 @@ Kelompok: TI1A<br>
     <li>menambah pesan sukses/gagal</li>
     <li>menampilkan pesan sukses/gagal</li>
     <li>mengecek request method menggunakan post atau tidak</li>
-    <li></li>
+    <li>membuat validasi</li>
 </ol>
