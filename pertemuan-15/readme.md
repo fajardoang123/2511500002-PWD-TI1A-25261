@@ -20,4 +20,5 @@ Kelompok: TI1A<br>
     <li>membuat skrip untuk memanggil data dari database</li>
     <li>menambahkan flash message sukses/gagal</li>
     <li>membuat struktur tabel untuk record biodata</li>
+    <li>menambah link untuk edit</li>
 </ol>
