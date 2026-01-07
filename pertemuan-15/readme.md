@@ -33,4 +33,5 @@ Kelompok: TI1A<br>
     <li>membuat query untuk update memnggunakan prepared statement</li>
     <li>membuat skrip untuk menghapus data berdasarkan parameter nmr pada file delete_biodata</li>
     <li>membuat konfirmasi penghapusan data</li>
+    <li>selesai</li>
 </ol>
