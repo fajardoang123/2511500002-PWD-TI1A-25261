@@ -6,4 +6,5 @@ Kelompok: TI1A<br>
 <br>
 <ol>
     <li>download bahan tryout uas</li>
+    <li>ekstrak bahan tryout uas ke folder pertemuan-15</li>
 </ol>
