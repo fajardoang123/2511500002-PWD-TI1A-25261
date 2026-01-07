@@ -23,7 +23,7 @@ $adik = bersihkan($_POST['txtNmAdik'] ?? '');
 $captcha = bersihkan($_POST['txtCaptcha'] ?? '');
 
 #Validasi sederhana
-$errors = []; #ini array untuk menampung semua error yang ada
+$errors = []; 
 
 if ($nim === '') {
   $errors[] = 'Nim wajib diisi.';

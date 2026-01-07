@@ -27,4 +27,5 @@ Kelompok: TI1A<br>
     <li>membuat skrip untuk mengambil nilai data lama untuk file update_biodata</li>
     <li>mmembuat form untuk update_biodata</li>
     <li>membuat file proses_update_biodata untuk memproses form edit</li>
+    <li>memastikan request method adalah post</li>
 </ol>
