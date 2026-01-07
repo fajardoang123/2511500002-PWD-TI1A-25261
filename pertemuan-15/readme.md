@@ -8,4 +8,5 @@ Kelompok: TI1A<br>
     <li>download bahan tryout uas</li>
     <li>ekstrak bahan tryout uas ke folder pertemuan-15</li>
     <li>membuat tabel untuk nampung record biodata</li>
+    <li>membuat file baru bernama proses_biodata untuk memproses form</li>
 </ol>
