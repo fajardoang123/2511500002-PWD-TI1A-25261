@@ -30,4 +30,5 @@ Kelompok: TI1A<br>
     <li>memastikan request method adalah post</li>
     <li>membuat validasi untuk nmr pada proses_update_biodata</li>
     <li>membuat sanitasi untuk proses_update_biodata</li>
+    <li>membuat query untuk update memnggunakan prepared statement</li>
 </ol>

@@ -92,9 +92,10 @@ if (!empty($errors)) {
   redirect_ke('update_biodata.php?nmr'.(int)$nmr);
 }
 
-#menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_about (nim, nama, tempat_lahir,tanggal_lahir,hobi,pasangan,pekerjaan,nama_ortu,kakak,adik) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-$stmt = mysqli_prepare($conn, $sql);
+#menyiapkan query update dengan prepared statement
+$stmt = mysqli_prepare($conn, "UPDATE tbl_about
+                                SET nim = ?, SET nama = ?, SET tempat_lahir = ?, SET tanggal_lahir = ?, SET hobi = ?, SET pasangan = ?, SET pekerjaan = ?, SET nama_ortu = ?, SET kakak = ?, SET adik = ?
+                                WHERE nmr = ?");
 
 if (!$stmt) {
   #jika gagal prepare, kirim pesan error ke pengguna 
