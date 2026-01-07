@@ -102,6 +102,12 @@ require_once __DIR__ . '/fungsi.php';
           <input type="text" id="txtNmAdik" name="txtNmAdik" placeholder="Masukkan Nama Adik" required value="<?= isset($old['adik']) ? htmlspecialchars($old['adik']) : '' ?>">
         </label>
 
+        <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
+          <input type="number" id="txtCaptcha" name="txtCaptcha" placeholder="Jawab Pertanyaan..."
+            required
+            value="<?= isset($old['captcha']) ? htmlspecialchars($old['captcha']) : '' ?>">
+        </label>
+
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>

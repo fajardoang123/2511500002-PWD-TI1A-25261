@@ -12,5 +12,6 @@ Kelompok: TI1A<br>
     <li>menambah pesan sukses/gagal</li>
     <li>menampilkan pesan sukses/gagal</li>
     <li>mengecek request method menggunakan post atau tidak</li>
-    <li>membuat validasi</li>
+    <li>membuat validasi untuk form biodata</li>
+    <li>membuat sanitasi untuk form biodata</li>
 </ol>
