@@ -21,4 +21,5 @@ Kelompok: TI1A<br>
     <li>menambahkan flash message sukses/gagal</li>
     <li>membuat struktur tabel untuk record biodata</li>
     <li>menambah link untuk edit</li>
+    <li>menambah link untuk delete</li>
 </ol>
