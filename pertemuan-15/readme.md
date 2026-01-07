@@ -22,4 +22,5 @@ Kelompok: TI1A<br>
     <li>membuat struktur tabel untuk record biodata</li>
     <li>menambah link untuk edit</li>
     <li>menambah link untuk delete</li>
+    <li>membuat file update_biodata untuk mengedit data</li>
 </ol>

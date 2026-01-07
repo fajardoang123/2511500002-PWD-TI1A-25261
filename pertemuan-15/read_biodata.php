@@ -52,10 +52,10 @@
     <tr>
       <td><?= $i++ ?></td>
       <td>
-        <a href="edit_biodata.php?nmr=<?= (int)$row['nmr']; ?>">Edit</a>
+        <a href="update_biodata.php?nmr=<?= (int)$row['nmr']; ?>">Edit</a>
         <a onclick="return confirm('Kamu yakin mau ngapus <?= htmlspecialchars($row['nama']); ?>? Gamau  dipikir-pikir lagi ?')" href="delete_biodata.php?nmr=<?= (int)$row['nmr']; ?>">Delete</a>
       </td>
-      <td><?= $row['cid']; ?></td>
+      <td><?= $row['nmr']; ?></td>
       <td><?= htmlspecialchars($row['nim']); ?></td>
       <td><?= htmlspecialchars($row['nama']); ?></td>
       <td><?= htmlspecialchars($row['tempat_lahir']); ?></td>
