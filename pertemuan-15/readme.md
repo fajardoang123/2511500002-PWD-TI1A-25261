@@ -18,4 +18,5 @@ Kelompok: TI1A<br>
     <li>menyiapkan query insert ke tabel menggunakan prepared statement</li>
     <li>membuat file read_biodata untuk membaca record</li>
     <li>membuat skrip untuk memanggil data dari database</li>
+    <li>menambahkan flash message sukses/gagal</lii>
 </ol>
