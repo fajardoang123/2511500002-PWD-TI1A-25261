@@ -77,4 +77,8 @@ if (!empty($errors)) {
   $_SESSION['flash_error'] = implode('<br>', $errors);
   redirect_ke('index.php#biodata');
 }
+
+$sql = "INSERT INTO tbl_dosen (KD_DOSEN, NM_DOSEN, ALMT, TGL, JJA, PRODI, NO_HP, PASANGAN, ANAK, ILMU) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$stmt = mysqli_prepare($conn, $sql);
+
 ?>
