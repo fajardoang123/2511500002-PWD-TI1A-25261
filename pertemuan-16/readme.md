@@ -26,4 +26,5 @@ Kelompok: TI1A<br>
     <li>membuat query untuk menginsert ke tabel</li>
     <li>membuat pesan jika berhasil dan gagal</li>
     <li>membuat file pembaca read_bio.php</li>
+    <li>membuat query untuk menampilkan tabel data</li>
 </ol>
