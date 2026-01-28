@@ -11,4 +11,5 @@ Kelompok: TI1A<br>
     <li>membuat file action untuk proses dengan nama proses_biodata.php</li>
     <li>membuat pengecek request method</li>
     <li>membuat variabel kd_dosen untuk mengambil dan menghapus nilai dari form</li>
+    <li>membuat variabel nm_dosen untuk mengambil dan menghapus nilai dari form</li>
 </ol>

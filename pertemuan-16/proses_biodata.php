@@ -9,5 +9,5 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 $kd_dosen = bersihkan($_POST['txtKodeDos'] ?? '');
-
+$nm_dosen = bersihkan($_POST['txtNmDosen'] ?? '');
 ?>
