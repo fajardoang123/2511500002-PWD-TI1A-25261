@@ -61,4 +61,20 @@ if ($ilmu === '') {
     $errors[] = 'Ilmu dosen wajib diisi';
 }
 
+if (!empty($errors)) {
+  $_SESSION['old'] = [
+    'kode'  => $kd_dosen,
+    'nama' => $nm_dosen,
+    'alamat' => $almt,
+    'tanggal' => $tgl,
+    'jja' => $jja,
+    'prodi' => $prodi,
+    'noHp' => $hp,
+    'pasangan' => $pasangan,
+    'anak' => $anak,
+    'ilmu' => $ilmu,
+  ];
+  $_SESSION['flash_error'] = implode('<br>', $errors);
+  redirect_ke('index.php#biodata');
+}
 ?>

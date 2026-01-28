@@ -22,4 +22,5 @@ Kelompok: TI1A<br>
     <li>membuat variabel ilmu untuk mengambil dan menghapus nilai dari form</li>
     <li>membuat variabel array untuk menampung eror</li>
     <li>membuat validasi sederhana</li>
+    <li>membuat session old untuk menampung nilai data lama jika terjadi eror</li>
 </ol>
