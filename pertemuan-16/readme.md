@@ -7,4 +7,5 @@ Kelompok: TI1A<br>
 <ol>
     <li>download bahan uas</li>
     <li>ekstrak bahan uas</li>
+    <li>membuat tabel dengan nama tbl_dosen</li>
 </ol>
