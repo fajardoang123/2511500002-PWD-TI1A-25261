@@ -11,9 +11,9 @@
 ?>
 
 <?php
-  $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
-  $flash_error  = $_SESSION['flash_error'] ?? ''; #jika ada error
-  #bersihkan session ini
+  $flash_sukses = $_SESSION['flash_sukses'] ?? ''; 
+  $flash_error  = $_SESSION['flash_error'] ?? ''; 
+  
   unset($_SESSION['flash_sukses'], $_SESSION['flash_error']); 
 ?>
 
