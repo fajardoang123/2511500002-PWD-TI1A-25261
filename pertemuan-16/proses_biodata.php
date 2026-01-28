@@ -25,4 +25,40 @@ if ($kd_dosen === '') {
     $errors[] = 'Kode wajib diisi';
 }
 
+if ($nm_dosen === '') {
+    $errors[] = 'Nama dosen wajib diisi';
+}
+
+if ($almt === '') {
+    $errors[] = 'Alamat dosen wajib diisi';
+}
+
+if ($tgl === '') {
+    $errors[] = 'Tanggal dosen wajib diisi';
+}
+
+if ($jja === '') {
+    $errors[] = 'JJA dosen wajib diisi';
+}
+
+if ($prodi === '') {
+    $errors[] = 'Prodi dosen wajib diisi';
+}
+
+if ($hp === '') {
+    $errors[] = 'No hp dosen wajib diisi';
+}
+
+if ($pasangan === '') {
+    $errors[] = 'Nama pasangan dosen wajib diisi';
+}
+
+if ($anak === '') {
+    $errors[] = 'Nama anak dosen wajib diisi';
+}
+
+if ($ilmu === '') {
+    $errors[] = 'Ilmu dosen wajib diisi';
+}
+
 ?>

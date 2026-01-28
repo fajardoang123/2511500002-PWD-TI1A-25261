@@ -21,4 +21,5 @@ Kelompok: TI1A<br>
     <li>membuat variabel anak untuk mengambil dan menghapus nilai dari form</li>
     <li>membuat variabel ilmu untuk mengambil dan menghapus nilai dari form</li>
     <li>membuat variabel array untuk menampung eror</li>
+    <li>membuat validasi sederhana</li>
 </ol>
