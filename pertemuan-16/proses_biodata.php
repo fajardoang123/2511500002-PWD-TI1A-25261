@@ -7,4 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
   redirect_ke('index.php#biodata');
 }
+
+$kd_dosen = bersihkan($_POST['txtKodeDos'] ?? '');
+
 ?>
