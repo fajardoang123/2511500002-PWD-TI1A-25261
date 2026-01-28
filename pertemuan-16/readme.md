@@ -12,4 +12,5 @@ Kelompok: TI1A<br>
     <li>membuat pengecek request method</li>
     <li>membuat variabel kd_dosen untuk mengambil dan menghapus nilai dari form</li>
     <li>membuat variabel nm_dosen untuk mengambil dan menghapus nilai dari form</li>
+    <li>membuat variabel almt untuk mengambil dan menghapus nilai dari form</li>
 </ol>
