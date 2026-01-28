@@ -10,85 +10,100 @@
   }
 
   #validasi cid wajib angka dan > 0
-  $cid = filter_input(INPUT_POST, 'cid', FILTER_VALIDATE_INT, [
+  $cid = filter_input(INPUT_POST, 'KID', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
   ]);
 
-  if (!$cid) {
+  if (!$KID) {
     $_SESSION['flash_error'] = 'CID Tidak Valid.';
-    redirect_ke('edit.php?cid='. (int)$cid);
+    redirect_ke('edit_bio.php?KID='. (int)$KID);
   }
 
-  #ambil dan bersihkan (sanitasi) nilai dari form
-  $nama  = bersihkan($_POST['txtNamaEd']  ?? '');
-  $email = bersihkan($_POST['txtEmailEd'] ?? '');
-  $pesan = bersihkan($_POST['txtPesanEd'] ?? '');
-  $captcha = bersihkan($_POST['txtCaptcha'] ?? '');
+$kd_dosen = bersihkan($_POST['txtKodeDos'] ?? '');
+$nm_dosen = bersihkan($_POST['txtNmDosen'] ?? '');
+$almt = bersihkan($_POST['txtAlRmh'] ?? '');
+$tgl = bersihkan($_POST['txtTglDosen'] ?? '');
+$jja = bersihkan($_POST['txtJJA'] ?? '');
+$prodi = bersihkan($_POST['txtProdi'] ?? '');
+$hp = bersihkan($_POST['txtNoHP'] ?? '');
+$pasangan = bersihkan($_POST['txNamaPasangan'] ?? '');
+$anak = bersihkan($_POST['txtNmAnak'] ?? '');
+$ilmu = bersihkan($_POST['txtBidangIlmu'] ?? '');
 
-  #Validasi sederhana
-  $errors = []; #ini array untuk menampung semua error yang ada
+$errors = [];
 
-  if ($nama === '') {
-    $errors[] = 'Nama wajib diisi.';
-  }
+if ($kd_dosen === '') {
+    $errors[] = 'Kode wajib diisi';
+}
 
-  if ($email === '') {
-    $errors[] = 'Email wajib diisi.';
-  } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'Format e-mail tidak valid.';
-  }
+if ($nm_dosen === '') {
+    $errors[] = 'Nama dosen wajib diisi';
+}
 
-  if ($pesan === '') {
-    $errors[] = 'Pesan wajib diisi.';
-  }
+if ($almt === '') {
+    $errors[] = 'Alamat dosen wajib diisi';
+}
 
-  if ($captcha === '') {
-    $errors[] = 'Pertanyaan wajib diisi.';
-  }
+if ($tgl === '') {
+    $errors[] = 'Tanggal dosen wajib diisi';
+}
 
-  if (mb_strlen($nama) < 3) {
-    $errors[] = 'Nama minimal 3 karakter.';
-  }
+if ($jja === '') {
+    $errors[] = 'JJA dosen wajib diisi';
+}
 
-  if (mb_strlen($pesan) < 10) {
-    $errors[] = 'Pesan minimal 10 karakter.';
-  }
+if ($prodi === '') {
+    $errors[] = 'Prodi dosen wajib diisi';
+}
 
-  if ($captcha!=="6") {
-    $errors[] = 'Jawaban '. $captcha.' captcha salah.';
-  }
+if ($hp === '') {
+    $errors[] = 'No hp dosen wajib diisi';
+}
 
-  /*
-  kondisi di bawah ini hanya dikerjakan jika ada error, 
-  simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
-  */
-  if (!empty($errors)) {
-    $_SESSION['old'] = [
-      'nama'  => $nama,
-      'email' => $email,
-      'pesan' => $pesan
-    ];
+if ($pasangan === '') {
+    $errors[] = 'Nama pasangan dosen wajib diisi';
+}
 
-    $_SESSION['flash_error'] = implode('<br>', $errors);
-    redirect_ke('edit.php?cid='. (int)$cid);
-  }
+if ($anak === '') {
+    $errors[] = 'Nama anak dosen wajib diisi';
+}
 
+if ($ilmu === '') {
+    $errors[] = 'Ilmu dosen wajib diisi';
+}
+
+if (!empty($errors)) {
+  $_SESSION['old'] = [
+    'kode'  => $kd_dosen,
+    'nama' => $nm_dosen,
+    'alamat' => $almt,
+    'tanggal' => $tgl,
+    'jja' => $jja,
+    'prodi' => $prodi,
+    'noHp' => $hp,
+    'pasangan' => $pasangan,
+    'anak' => $anak,
+    'ilmu' => $ilmu,
+  ];
+  $_SESSION['flash_error'] = implode('<br>', $errors);
+  redirect_ke('edit_bio.php?KID='. (int)$KID);
+}
   /*
     Prepared statement untuk anti SQL injection.
     menyiapkan query UPDATE dengan prepared statement 
     (WAJIB WHERE cid = ?)
   */
-  $stmt = mysqli_prepare($conn, "UPDATE tbl_tamu 
-                                SET cnama = ?, cemail = ?, cpesan = ? 
-                                WHERE cid = ?");
+  $stmt = mysqli_prepare($conn, "UPDATE tbl_dosen
+                                SET KD_DOSEN = ?, NM_DOSEN = ?, ALMT = ?, TGL = ?, JJA = ?, PRODI = ?, NO_HP =? , PASANGAN = ?, ANAK = ?, ILMU =?
+                                WHERE KID = ?");
   if (!$stmt) {
     #jika gagal prepare, kirim pesan error (tanpa detail sensitif)
     $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
-    redirect_ke('edit.php?cid='. (int)$cid);
+    redirect_ke('edit_bio.php?KID='. (int)$KID);
   }
 
   #bind parameter dan eksekusi (s = string, i = integer)
-  mysqli_stmt_bind_param($stmt, "sssi", $nama, $email, $pesan, $cid);
+  mysqli_stmt_bind_param($stmt, "ssssssssssi", $nama, $email, $pesan, $cid);
 
   if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value
     unset($_SESSION['old']);
