@@ -16,4 +16,5 @@ $jja = bersihkan($_POST['txtJJA'] ?? '');
 $prodi = bersihkan($_POST['txtProdi'] ?? '');
 $hp = bersihkan($_POST['txtNoHP'] ?? '');
 $pasangan = bersihkan($_POST['txNamaPasangan'] ?? '');
+$anak = bersihkan($_POST['txtNmAnak'] ?? '');
 ?>
