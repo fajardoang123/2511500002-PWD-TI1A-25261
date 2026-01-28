@@ -29,4 +29,5 @@ Kelompok: TI1A<br>
     <li>membuat query untuk menampilkan tabel data</li>
     <li>membuat penampil pesan sukses dan gagal</li>
     <li>membuat tabel untuk ditampilkan</li>
+    <li>membuat file edit_bio.php</li>
 </ol>
