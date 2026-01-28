@@ -15,5 +15,5 @@ Kelompok: TI1A<br>
     <li>membuat variabel almt untuk mengambil dan menghapus nilai dari form</li>
     <li>membuat variabel tgl untuk mengambil dan menghapus nilai dari form</li>
     <li>membuat variabel jja untuk mengambil dan menghapus nilai dari form</li>
-    
+    <li>membuat variabel prodi untuk mengambil dan menghapus nilai dari form</li>
 </ol>
