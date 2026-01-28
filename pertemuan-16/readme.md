@@ -25,4 +25,5 @@ Kelompok: TI1A<br>
     <li>membuat session old untuk menampung nilai data lama jika terjadi eror</li>
     <li>membuat query untuk menginsert ke tabel</li>
     <li>membuat pesan jika berhasil dan gagal</li>
+    <li>membuat file pembaca read_bio.php</li>
 </ol>
