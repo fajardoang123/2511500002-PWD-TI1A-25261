@@ -81,4 +81,41 @@ if (!empty($errors)) {
 $sql = "INSERT INTO tbl_dosen (KD_DOSEN, NM_DOSEN, ALMT, TGL, JJA, PRODI, NO_HP, PASANGAN, ANAK, ILMU) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
+if (mysqli_stmt_execute($stmt)) { 
+  unset($_SESSION['old']);
+  $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
+  redirect_ke('index.php#biodata'); 
+} else { 
+  $_SESSION['old'] = [
+     'kode'  => $kd_dosen,
+    'nama' => $nm_dosen,
+    'alamat' => $almt,
+    'tanggal' => $tgl,
+    'jja' => $jja,
+    'prodi' => $prodi,
+    'noHp' => $hp,
+    'pasangan' => $pasangan,
+    'anak' => $anak,
+    'ilmu' => $ilmu,
+  ];
+  $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
+  redirect_ke('index.php#contact');
+}
+mysqli_stmt_close($stmt);
+
+$arrBiodata = [
+  "kodedos" => $_POST["txtKodeDos"] ?? "",
+  "nama" => $_POST["txtNmDosen"] ?? "",
+  "alamat" => $_POST["txtAlRmh"] ?? "",
+  "tanggal" => $_POST["txtTglDosen"] ?? "",
+  "jja" => $_POST["txtJJA"] ?? "",
+  "prodi" => $_POST["txtProdi"] ?? "",
+  "nohp" => $_POST["txtNoHP"] ?? "",
+  "pasangan" => $_POST["txNamaPasangan"] ?? "",
+  "anak" => $_POST["txtNmAnak"] ?? "",
+  "ilmu" => $_POST["txtBidangIlmu"] ?? ""
+];
+$_SESSION["biodata"] = $arrBiodata;
+
+header("location: index.php#biodata");
 ?>
