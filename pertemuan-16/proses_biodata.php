@@ -12,4 +12,5 @@ $kd_dosen = bersihkan($_POST['txtKodeDos'] ?? '');
 $nm_dosen = bersihkan($_POST['txtNmDosen'] ?? '');
 $almt = bersihkan($_POST['txtAlRmh'] ?? '');
 $tgl = bersihkan($_POST['txtTglDosen'] ?? '');
+$jja = bersihkan($_POST['txtJJA'] ?? '');
 ?>
