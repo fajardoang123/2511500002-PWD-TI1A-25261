@@ -28,4 +28,5 @@ Kelompok: TI1A<br>
     <li>membuat file pembaca read_bio.php</li>
     <li>membuat query untuk menampilkan tabel data</li>
     <li>membuat penampil pesan sukses dan gagal</li>
+    <li>membuat tabel untuk ditampilkan</li>
 </ol>

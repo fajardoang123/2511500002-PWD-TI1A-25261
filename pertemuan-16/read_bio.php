@@ -3,7 +3,7 @@
   require 'koneksi.php';
   require 'fungsi.php';
 
-  $sql = "SELECT * FROM tbl_dosen ORDER BY cid DESC";
+  $sql = "SELECT * FROM tbl_dosen ORDER BY KID DESC";
   $q = mysqli_query($conn, $sql);
   if (!$q) {
     die("Query error: " . mysqli_error($conn));
@@ -36,24 +36,35 @@
     <th>No</th>
     <th>Aksi</th>
     <th>ID</th>
+    <th>Kode dosen</th>
     <th>Nama</th>
-    <th>Email</th>
-    <th>Pesan</th>
-    <th>Created At</th>
+    <th>Alamat</th>
+    <th>JJA</th>
+    <th>Prodi</th>
+    <th>No hp</th>
+    <th>Pasangan</th>
+    <th>Anak</th>
+    <th>Imu</th>
   </tr>
   <?php $i = 1; ?>
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
       <td><?= $i++ ?></td>
       <td>
-        <a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="proses_delete.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+        <a href="edit_bio.php?KID=<?= (int)$row['KID']; ?>">Edit</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['NM_DOSEN']); ?>?')" href="delete_bio.php?cid=<?= (int)$row['KID']; ?>">Delete</a>
       </td>
-      <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row['cnama']); ?></td>
-      <td><?= htmlspecialchars($row['cemail']); ?></td>
-      <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
-      <td><?= formatTanggal(htmlspecialchars($row['dcreated_at'])); ?></td>
+      <td><?= $row['KID']; ?></td>
+      <td><?= htmlspecialchars($row['KD_DOSEN']); ?></td>
+      <td><?= htmlspecialchars($row['NM_DOSEN']); ?></td>
+      <td><?= htmlspecialchars($row['ALMT']); ?></td>
+      <td><?= htmlspecialchars($row['TGL']); ?></td>
+      <td><?= htmlspecialchars($row['JJA']); ?></td>
+      <td><?= htmlspecialchars($row['PRODI']); ?></td>
+      <td><?= htmlspecialchars($row['NO_HP']); ?></td>
+      <td><?= htmlspecialchars($row['PASANGAN']); ?></td>
+      <td><?= htmlspecialchars($row['ANAK']); ?></td>
+      <td><?= htmlspecialchars($row['ILMU']); ?></td>
     </tr>
   <?php endwhile; ?>
 </table>
