@@ -8,4 +8,5 @@ Kelompok: TI1A<br>
     <li>download bahan uas</li>
     <li>ekstrak bahan uas</li>
     <li>membuat tabel dengan nama tbl_dosen</li>
+    <li>membuat file action untuk proses dengan nama proses_biodata.php</li>
 </ol>
