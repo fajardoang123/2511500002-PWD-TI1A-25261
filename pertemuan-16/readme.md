@@ -30,5 +30,6 @@ Kelompok: TI1A<br>
     <li>membuat penampil pesan sukses dan gagal</li>
     <li>membuat tabel untuk ditampilkan</li>
     <li>membuat file edit_bio.php</li>
-    <li>membuat skrip untuk proses update</li>
+    <li>membuat form di file edit</li>
+    <li>membuat file update_bio.php</li>
 </ol>
