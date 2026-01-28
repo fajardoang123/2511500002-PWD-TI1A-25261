@@ -6,4 +6,5 @@ Kelompok: TI1A<br>
 <br>
 <ol>
     <li>download bahan uas</li>
+    <li>ekstrak bahan uas</li>
 </ol>
